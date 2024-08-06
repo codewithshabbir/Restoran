@@ -1,0 +1,282 @@
+/* Heebo Fonts */
+@font-face {
+  font-family: "Heebo";
+  src: url("assets/fonts/Heebo/Heebo-VariableFont_wght.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Heebo";
+  src: url("assets/fonts/Heebo/static/Heebo-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Heebo";
+  src: url("assets/fonts/Heebo/static/Heebo-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Heebo";
+  src: url("assets/fonts/Heebo/static/Heebo-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Heebo";
+  src: url("assets/fonts/Heebo/static/Heebo-ExtraLight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Heebo";
+  src: url("assets/fonts/Heebo/static/Heebo-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Heebo";
+  src: url("assets/fonts/Heebo/static/Heebo-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Heebo";
+  src: url("assets/fonts/Heebo/static/Heebo-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Heebo";
+  src: url("assets/fonts/Heebo/static/Heebo-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Heebo";
+  src: url("assets/fonts/Heebo/static/Heebo-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+/* Nunito Fonts */
+@font-face {
+  font-family: "Nunito";
+  src: url("assets/fonts/Nunito/Nunito-Italic-VariableFont_wght.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Nunito";
+  src: url("assets/fonts/Nunito/Nunito-VariableFont_wght.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Nunito";
+  src: url("assets/fonts/Nunito/static/Nunito-ExtraLightItalic.ttf")
+    format("truetype");
+  font-weight: 200;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Nunito";
+  src: url("assets/fonts/Nunito/static/Nunito-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Nunito";
+  src: url("assets/fonts/Nunito/static/Nunito-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Nunito";
+  src: url("assets/fonts/Nunito/static/Nunito-LightItalic.ttf")
+    format("truetype");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Nunito";
+  src: url("assets/fonts/Nunito/static/Nunito-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Nunito";
+  src: url("assets/fonts/Nunito/static/Nunito-MediumItalic.ttf")
+    format("truetype");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Nunito";
+  src: url("assets/fonts/Nunito/static/Nunito-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Nunito";
+  src: url("assets/fonts/Nunito/static/Nunito-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Nunito";
+  src: url("assets/fonts/Nunito/static/Nunito-SemiBoldItalic.ttf")
+    format("truetype");
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Nunito";
+  src: url("assets/fonts/Nunito/static/Nunito-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Nunito";
+  src: url("assets/fonts/Nunito/static/Nunito-BlackItalic.ttf")
+    format("truetype");
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Nunito";
+  src: url("assets/fonts/Nunito/static/Nunito-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Nunito";
+  src: url("assets/fonts/Nunito/static/Nunito-BoldItalic.ttf")
+    format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Nunito";
+  src: url("assets/fonts/Nunito/static/Nunito-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Nunito";
+  src: url("assets/fonts/Nunito/static/Nunito-ExtraBoldItalic.ttf")
+    format("truetype");
+  font-weight: 800;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Nunito";
+  src: url("assets/fonts/Nunito/static/Nunito-ExtraLight.ttf")
+    format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+
+/* Pacifico Font */
+@font-face {
+  font-family: "Pacifico";
+  src: url("assets/fonts/Pacifico/Pacifico-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Color Variables */
+:root {
+  --primary-color: #ff6347; /* Example Primary Color */
+  --secondary-color: #6c757d; /* Example Secondary Color */
+  --background-color: #f8f9fa; /* Example Background Color */
+  --text-color: #212529; /* Example Text Color */
+  --heading-color: #343a40; /* Example Heading Color */
+  --border-color: #dee2e6; /* Example Border Color */
+}
+
+/* Applying Fonts and Colors to Elements */
+body {
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  color: var(--heading-color);
+}
+
+p,
+a,
+span {
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+}
+
+button,
+.btn {
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  background-color: var(--primary-color);
+  color: #fff;
+  border-color: var(--primary-color);
+}
+
+.btn-secondary {
+  background-color: var(--secondary-color);
+  color: #fff;
+  border-color: var(--secondary-color);
+}
+
+.header,
+.footer,
+.navbar {
+  background-color: var(--heading-color);
+  color: #fff;
+}
+
+.card {
+  border-color: var(--border-color);
+}
+
+.logo {
+  font-family: "Pacifico", cursive;
+  color: var(--primary-color);
+}
