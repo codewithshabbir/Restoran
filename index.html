@@ -1,15 +1,234 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Restoran</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
-    <h1>Hello, world!</h1>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <header>
+      <div class="container header my-3">
+        <div class="logo">
+          <a href="#">
+            <i class="fa fa-utensils me-3"></i>
+            <h1 class="mb-0">Restoran</h1>
+          </a>
+        </div>
+        <div class="menus">
+          <ul class="d-flex mb-0">
+            <li class="list-unstyled py-2">
+              <a class="text-decoration-none text-uppercase p-4" href=""
+                >Home</a
+              >
+            </li>
+            <li class="list-unstyled py-2">
+              <a class="text-decoration-none text-uppercase p-4" href=""
+                >About</a
+              >
+            </li>
+            <li class="list-unstyled py-2">
+              <a class="text-decoration-none text-uppercase p-4" href=""
+                >Reservation</a
+              >
+            </li>
+            <li class="list-unstyled py-2">
+              <a class="text-decoration-none text-uppercase p-4" href=""
+                >Menu</a
+              >
+            </li>
+            <li class="list-unstyled py-2">
+              <a class="text-decoration-none text-uppercase p-4" href=""
+                >Blog</a
+              >
+            </li>
+            <li class="list-unstyled py-2">
+              <a class="text-decoration-none text-uppercase p-4" href=""
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="icons">
+          <a class="text-decoration-none" id="searchBtn" href="#">
+            <i class="fa fa-search me-3"></i>
+          </a>
+          <a class="text-decoration-none" href="">
+            <i class="fa fa-shopping-bag me-3"></i>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <div class="search-bar d-none" id="search-container">
+      <div class="close-btn" id="search-close-btn">
+        <i class="fa fa-close"></i>
+      </div>
+      <div class="search-bar-wrapper">
+        <input type="search" placeholder="Enter any text here..." />
+        <div class="search-button">
+          <a href="#"><i class="fa fa-search"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <main>
+      <section class="banner py-5">
+        <div class="container py-5">
+          <div class="row">
+            <div class="col-md-6 banner-content pe-5">
+              <h1>Enjoy Our <br> Delicious Meal</h1>
+                <p>
+                  Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet
+                </p>
+                <div class="book-a-table">
+                  <div class="anim-layer"></div>
+                  <a href="#">Book a table</a>
+                </div>
+            </div>
+            <div class="col-md-6 banner-img">
+              <img src="./assets/images/banner-img.png" alt="">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="services my-5 py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="cards px-4 py-5">
+                <div class="anim-layer"></div>
+                <div class="icon"> 
+                  <i class="fa fa-3x fa-user-tie mb-4"></i>
+                </div>
+                <div class="heading">
+                  <h5>Master Chefs</h5>
+                </div>
+                <div class="para">
+                  <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="cards px-4 py-5">
+                <div class="anim-layer"></div>
+                <div class="icon">
+                  <i class="fa fa-3x fa-utensils mb-4"></i>
+                </div>
+                <div class="heading">
+                  <h5>Quality Food</h5>
+                </div>
+                <div class="para">
+                  <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="cards px-4 py-5">
+                <div class="anim-layer"></div>
+                <div class="icon">
+                  <i class="fa fa-3x fa-cart-plus mb-4"></i>
+                </div>
+                <div class="heading">
+                  <h5>Online Order</h5>
+                </div>
+                <div class="para">
+                  <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="cards px-4 py-5">
+                <div class="anim-layer"></div>
+                <div class="icon">
+                  <i class="fa fa-3x fa-headset mb-4"></i>
+                </div>
+                <div class="heading">
+                  <h5>24/7 Service</h5>
+                </div>
+                <div class="para">
+                  <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="about-us py-5 my-5">
+        <div class="container-xxl">
+          <div class="container">
+              <div class="row g-5 align-items-center">
+                  <div class="col-lg-6">
+                      <div class="row g-3">
+                          <div class="col-6 text-start">
+                              <img class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.1s" src="/assets/images/about-1.jpg">
+                          </div>
+                          <div class="col-6 text-start">
+                              <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.3s" src="/assets/images/about-2.jpg" style="margin-top: 25%;">
+                          </div>
+                          <div class="col-6 text-end">
+                              <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.5s" src="/assets/images/about-3.jpg">
+                          </div>
+                          <div class="col-6 text-end">
+                              <img class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.7s" src="/assets/images/about-4.jpg">
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-lg-6 about-content">
+                      <h5 class="section-title ff-secondary text-start  fw-normal">About Us</h5>
+                      <h1 class="mb-4">Welcome to <i class="fa fa-utensils  me-2"></i>Restoran</h1>
+                      <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos erat ipsum et lorem et sit, sed stet lorem sit.</p>
+                      <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+                      <div class="row g-4 mb-4">
+                          <div class="col-sm-6">
+                              <div class="d-flex align-items-center border-start border-5  px-3">
+                                  <h1 class="flex-shrink-0 display-5  mb-0" data-toggle="counter-up">15</h1>
+                                  <div class="ps-4">
+                                      <p class="mb-0">Years of</p>
+                                      <h6 class="text-uppercase mb-0">Experience</h6>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-sm-6">
+                              <div class="d-flex align-items-center border-start border-5  px-3">
+                                  <h1 class="flex-shrink-0 display-5  mb-0" data-toggle="counter-up">50</h1>
+                                  <div class="ps-4">
+                                      <p class="mb-0">Popular</p>
+                                      <h6 class="text-uppercase mb-0">Master Chefs</h6>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="book-a-table">
+                        <div class="anim-layer"></div>
+                        <a href="#">Read More</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      
+      </section>
+    </main>
+    <footer></footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
     <script src="./assets/js/script.js"></script>
   </body>
 </html>
