@@ -129,3 +129,48 @@ $('#our-menus').on('beforeChange', function(event, slick, currentSlide, nextSlid
 });
 
 
+
+
+
+
+// testimonial slider
+$(document).ready(function() {
+  // Initialize the slider for the testimonials
+  $('.testimonials .slider-content').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: true,
+    speed: 300,
+    asNavFor: '.testimonials .slider-nav',
+    draggable: true,
+    swipe: true,
+  });
+
+  // Initialize the slider for the navigation thumbnails
+  $('.testimonials .slider-nav').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    asNavFor: '.testimonials .slider-content',
+    dots: false,
+    focusOnSelect: true,
+    centerMode: true,  // Center the active slide
+    centerPadding: '0px',
+    draggable: true,
+    swipe: true,
+    arrows: false,  // Disable navigation arrows
+    infinite: true,
+  });
+
+  // Manually handle centering the active slide
+  $('.testimonials .slider-nav').on('afterChange', function(event, slick, currentSlide) {
+    // Remove the active class from all thumbnails
+    $('.slider-nav-img').removeClass('active');
+    
+    // Add the active class to the current centered thumbnail
+    $('.slider-nav-img').eq(currentSlide + 1).addClass('active');
+
+    // Center the active slide
+    $('.testimonials .slider-nav').slick('slickGoTo', currentSlide);
+  });
+});
