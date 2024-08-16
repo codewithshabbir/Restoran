@@ -42,3 +42,90 @@ document.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('scroll', checkScroll);  
   checkScroll();
 });
+
+
+
+
+// our menu slider
+$('#our-menus').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  fade: true,
+  speed: 300,
+  asNavFor: '.slider-indicators-wrapper',
+  draggable: false,
+  swipe: false,
+  
+});
+$('.slider-indicators-wrapper').slick({
+  slidesToShow: 5,
+  slidesToScroll: 1,
+  asNavFor: '#our-menus',
+  dots: false,
+  focusOnSelect: true,
+  draggable: false,
+  swipe: false,
+  responsive: [
+    {
+      breakpoint: 991,
+      settings: {
+        slidesToShow: 5,
+      }
+    },
+    {
+      breakpoint: 990,
+      settings: {
+        slidesToShow: 1,
+        arrows: true,
+      }
+    }
+  ]
+});
+
+$(".prev-btn").click(function () {
+  $(".slick-list").slick("slickPrev");
+});
+
+$(".next-btn").click(function () {
+  $(".slick-list").slick("slickNext");
+});
+
+$(".prev-btn").addClass("slick-disabled");
+
+$(".slick-list").on("afterChange", function () {
+  if ($(".slick-prev").hasClass("slick-disabled")) {
+    $(".prev-btn").addClass("slick-disabled");
+  } else {
+    $(".prev-btn").removeClass("slick-disabled");
+  }
+  if ($(".slick-next").hasClass("slick-disabled")) {
+    $(".next-btn").addClass("slick-disabled");
+  } else {
+    $(".next-btn").removeClass("slick-disabled");
+  }
+});
+
+// Custom animation for bottom-to-top slide
+$('#our-menus').on('beforeChange', function(event, slick, currentSlide, nextSlide) {
+  var $nextSlide = $(slick.$slides[nextSlide]);
+  var $currentSlide = $(slick.$slides[currentSlide]);
+
+  // Set initial state for the next slide
+  $nextSlide.css({
+    'transform': 'translateY(10%)',
+    'opacity': 0,
+  });
+
+
+  // Animate the next slide into view after a short delay
+  setTimeout(function() {
+    $nextSlide.css({
+      'transform': 'translateY(0)',
+      'opacity': 1,
+      'transition': 'transform 0.3s ease-in-out, opacity 0.3s ease-in-out'
+    });
+  }, 50); 
+});
+
+

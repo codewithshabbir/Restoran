@@ -17,6 +17,7 @@
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
@@ -84,7 +85,7 @@
         </div>
       </div>
     </div>
-
+    
     <main>
       <section class="banner py-5">
         <div class="container py-5">
@@ -168,62 +169,481 @@
         </div>
       </section>
       <section class="about-us py-5 my-5">
-        <div class="container-xxl">
-          <div class="container">
-              <div class="row g-5 align-items-center">
-                  <div class="col-lg-6">
-                      <div class="row g-3">
-                          <div class="col-6 text-start">
-                              <img class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.1s" src="./assets/images/about-1.jpg">
+        <div class="container">
+          <div class="row g-5 align-items-center">
+              <div class="col-lg-6 about-img-box">
+                  <div class="row g-3">
+                      <div class="col-6">
+                          <img class="img-fluid rounded w-100" src="./assets/images/about-1.jpg">
+                      </div>
+                      <div class="col-6 text-right">
+                          <img class="img-fluid rounded w-75" src="./assets/images/about-2.jpg">
+                      </div>
+                      <div class="col-6 text-end">
+                          <img class="img-fluid rounded w-75" src="./assets/images/about-3.jpg">
+                      </div>
+                      <div class="col-6 text-end">
+                          <img class="img-fluid rounded w-100" src="./assets/images/about-4.jpg">
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-6 about-content">
+                  <h5 class="section-title">About Us</h5>
+                  <h2 class="mb-4">Welcome to <i class="fa fa-utensils  me-2"></i>Restoran</h2>
+                  <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos erat ipsum et lorem et sit, sed stet lorem sit.</p>
+                  <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+                  <div class="row g-4 mb-4 about-extra">
+                      <div class="col-sm-6">
+                          <div class="d-flex align-items-center px-3 about-experience">
+                              <h1 class="flex-shrink-0  mb-0">15</h1>
+                              <div class="ps-4">
+                                  <p class="mb-0">Years of</p>
+                                  <h6 class="text-uppercase mb-0">Experience</h6>
+                              </div>
                           </div>
-                          <div class="col-6 text-start">
-                              <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.3s" src="./assets/images/about-2.jpg" style="margin-top: 25%;">
-                          </div>
-                          <div class="col-6 text-end">
-                              <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.5s" src="./assets/images/about-3.jpg">
-                          </div>
-                          <div class="col-6 text-end">
-                              <img class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.7s" src="./assets/images/about-4.jpg">
+                      </div>
+                      <div class="col-sm-6">
+                          <div class="d-flex align-items-center px-3 about-popular">
+                              <h1 class="flex-shrink-0  mb-0">50</h1>
+                              <div class="ps-4">
+                                  <p class="mb-0">Popular</p>
+                                  <h6 class="text-uppercase mb-0">Master Chefs</h6>
+                              </div>
                           </div>
                       </div>
                   </div>
-                  <div class="col-lg-6 about-content">
-                      <h5 class="section-title ff-secondary text-start  fw-normal">About Us</h5>
-                      <h1 class="mb-4">Welcome to <i class="fa fa-utensils  me-2"></i>Restoran</h1>
-                      <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos erat ipsum et lorem et sit, sed stet lorem sit.</p>
-                      <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
-                      <div class="row g-4 mb-4">
-                          <div class="col-sm-6">
-                              <div class="d-flex align-items-center border-start border-5  px-3">
-                                  <h1 class="flex-shrink-0 display-5  mb-0" data-toggle="counter-up">15</h1>
-                                  <div class="ps-4">
-                                      <p class="mb-0">Years of</p>
-                                      <h6 class="text-uppercase mb-0">Experience</h6>
-                                  </div>
-                              </div>
-                          </div>
-                          <div class="col-sm-6">
-                              <div class="d-flex align-items-center border-start border-5  px-3">
-                                  <h1 class="flex-shrink-0 display-5  mb-0" data-toggle="counter-up">50</h1>
-                                  <div class="ps-4">
-                                      <p class="mb-0">Popular</p>
-                                      <h6 class="text-uppercase mb-0">Master Chefs</h6>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="book-a-table">
-                        <div class="anim-layer"></div>
-                        <a href="#">Read More</a>
-                      </div>
+                  <div class="book-a-table">
+                    <div class="anim-layer"></div>
+                    <a href="#">Read More</a>
                   </div>
               </div>
           </div>
       </div>
       
       </section>
+
+      <section class="our-menu py-5 my-5">
+        <div class="container">
+          <div class="row">
+            <div class="section-title text-center">
+              <h5>Our Menu</h5>
+              <h2>Tasty And Good Price</h2>
+            </div>
+          </div>
+          <div class="row  position-relative">
+            <div class="slider slider-indicators-wrapper justify-content-center">
+              <div class="slider-indicators">
+                <div class="indicators-icon active text-center">
+                  <i class="fas fa-coffee fa-2x"></i>
+                </div>
+                <div class="indicators-title text-center">
+                  <h5>
+                    Breakfast
+                  </h5>
+                </div>
+              </div>
+              <div class="slider-indicators">
+                <div class="indicators-icon text-center">
+                  <i class="fas fa-utensils fa-2x"></i>
+                </div>
+                <div class="indicators-title text-center">
+                  <h5>
+                    Lunch
+                  </h5>
+                </div>
+              </div>
+              <div class="slider-indicators">
+                <div class="indicators-icon text-center">
+                  <i class="fas fa-hamburger fa-2x"></i>
+                </div>
+                <div class="indicators-title text-center">
+                  <h5>
+                    Dinner
+                  </h5>
+                </div>
+              </div>
+              <div class="slider-indicators">
+                <div class="indicators-icon text-center">
+                  <i class="fas fa-ice-cream fa-2x"></i>
+                </div>
+                <div class="indicators-title text-center">
+                  <h5>
+                    Desserts
+                  </h5>
+                </div>
+              </div>
+              <div class="slider-indicators">
+                <div class="indicators-icon text-center">
+                  <i class="fas fa-cocktail fa-2x"></i>
+                </div>
+                <div class="indicators-title text-center">
+                  <h5>
+                    Drink
+                  </h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="our-menus" class="slider">
+            <div>
+              <div class="row my-5 py-3">
+              <div class="col-lg-5">
+                <div>
+                  <img width="90%" src="./assets/images/menu-slider-dessert.png" alt="">
+                </div>
+              </div>
+              <div class="col-lg-7">
+                <div class="item-wrapper d-flex justify-content-between">
+                  <div class="item-left">
+                    <h5>The Cracker Barrel's Country Boy Breakfast</h5>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum </p>
+                  </div>
+                  <div class="item-right">
+                    <span class="item-price">
+                    <span class="price-symbol">$</span>
+                      25.0</span>
+                    <div class="item-btn">
+                      <a href="#">Order</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="item-wrapper d-flex justify-content-between">
+                  <div class="item-left">
+                    <h5>Uncle Herschel's Favorite</h5>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum </p>
+                  </div>
+                  <div class="item-right">
+                    <span class="item-price">
+                    <span class="price-symbol">$</span>
+                      45.0</span>
+                    <div class="item-btn">
+                      <a href="#">Order</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="item-wrapper d-flex justify-content-between">
+                  <div class="item-left">
+                    <h5>Grandpa's Country Fried Breakfast</h5>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum </p>
+                  </div>
+                  <div class="item-right">
+                    <span class="item-price">
+                    <span class="price-symbol">$</span>
+                      30.0</span>
+                    <div class="item-btn">
+                      <a href="#">Order</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="item-wrapper d-flex justify-content-between">
+                  <div class="item-left">
+                    <h5>Old Timer's Meat Breakfast</h5>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum </p>
+                  </div>
+                  <div class="item-right">
+                    <span class="item-price">
+                    <span class="price-symbol">$</span>
+                      12.0</span>
+                    <div class="item-btn">
+                      <a href="#">Order</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="item-wrapper d-flex justify-content-between">
+                  <div class="item-left">
+                    <h5>Chinese Chicken Bread Spicy Soup</h5>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum </p>
+                  </div>
+                  <div class="item-right">
+                    <span class="item-price">
+                    <span class="price-symbol">$</span>
+                      12.0</span>
+                    <div class="item-btn">
+                      <a href="#">Order</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </div>
+            </div>
+            <div>
+              <div class="row my-5 py-3 ">
+                <div class="col-lg-5">
+                  <div>
+                    <img width="90%" src="./assets/images/menu-slider-dinner.png" alt="">
+                  </div>
+                </div>
+                <div class="col-lg-7">
+                  <div class="item-wrapper d-flex justify-content-between">
+                    <div class="item-left">
+                      <h5>The Cracker Barrel's Country Boy Breakfast</h5>
+                      <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum </p>
+                    </div>
+                    <div class="item-right">
+                      <span class="item-price">
+                      <span class="price-symbol">$</span>
+                        25.0</span>
+                      <div class="item-btn">
+                        <a href="#">Order</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item-wrapper d-flex justify-content-between">
+                    <div class="item-left">
+                      <h5>Uncle Herschel's Favorite</h5>
+                      <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum </p>
+                    </div>
+                    <div class="item-right">
+                      <span class="item-price">
+                      <span class="price-symbol">$</span>
+                        45.0</span>
+                      <div class="item-btn">
+                        <a href="#">Order</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item-wrapper d-flex justify-content-between">
+                    <div class="item-left">
+                      <h5>Grandpa's Country Fried Breakfast</h5>
+                      <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum </p>
+                    </div>
+                    <div class="item-right">
+                      <span class="item-price">
+                      <span class="price-symbol">$</span>
+                        30.0</span>
+                      <div class="item-btn">
+                        <a href="#">Order</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item-wrapper d-flex justify-content-between">
+                    <div class="item-left">
+                      <h5>Old Timer's Meat Breakfast</h5>
+                      <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum </p>
+                    </div>
+                    <div class="item-right">
+                      <span class="item-price">
+                      <span class="price-symbol">$</span>
+                        12.0</span>
+                      <div class="item-btn">
+                        <a href="#">Order</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item-wrapper d-flex justify-content-between">
+                    <div class="item-left">
+                      <h5>Chinese Chicken Bread Spicy Soup</h5>
+                      <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum </p>
+                    </div>
+                    <div class="item-right">
+                      <span class="item-price">
+                      <span class="price-symbol">$</span>
+                        12.0</span>
+                      <div class="item-btn">
+                        <a href="#">Order</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="row my-5 py-3 ">
+                <div class="col-lg-5">
+                  <div>
+                    <img width="90%" src="./assets/images/menu-slider-dessert.png" alt="">
+                  </div>
+                </div>
+                <div class="col-lg-7">
+                  <div class="item-wrapper d-flex justify-content-between">
+                    <div class="item-left">
+                      <h5>The Cracker Barrel's Country Boy Breakfast</h5>
+                      <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum </p>
+                    </div>
+                    <div class="item-right">
+                      <span class="item-price">
+                      <span class="price-symbol">$</span>
+                        25.0</span>
+                      <div class="item-btn">
+                        <a href="#">Order</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item-wrapper d-flex justify-content-between">
+                    <div class="item-left">
+                      <h5>Uncle Herschel's Favorite</h5>
+                      <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum </p>
+                    </div>
+                    <div class="item-right">
+                      <span class="item-price">
+                      <span class="price-symbol">$</span>
+                        45.0</span>
+                      <div class="item-btn">
+                        <a href="#">Order</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item-wrapper d-flex justify-content-between">
+                    <div class="item-left">
+                      <h5>Grandpa's Country Fried Breakfast</h5>
+                      <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum </p>
+                    </div>
+                    <div class="item-right">
+                      <span class="item-price">
+                      <span class="price-symbol">$</span>
+                        30.0</span>
+                      <div class="item-btn">
+                        <a href="#">Order</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item-wrapper d-flex justify-content-between">
+                    <div class="item-left">
+                      <h5>Old Timer's Meat Breakfast</h5>
+                      <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum </p>
+                    </div>
+                    <div class="item-right">
+                      <span class="item-price">
+                      <span class="price-symbol">$</span>
+                        12.0</span>
+                      <div class="item-btn">
+                        <a href="#">Order</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item-wrapper d-flex justify-content-between">
+                    <div class="item-left">
+                      <h5>Chinese Chicken Bread Spicy Soup</h5>
+                      <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum </p>
+                    </div>
+                    <div class="item-right">
+                      <span class="item-price">
+                      <span class="price-symbol">$</span>
+                        12.0</span>
+                      <div class="item-btn">
+                        <a href="#">Order</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="row my-5 py-3 ">
+                <div class="col-lg-5">
+                  <div>
+                    <img width="90%" src="./assets/images/menu-slider-lunch.png" alt="">
+                  </div>
+                </div>
+                <div class="col-lg-7">
+                  <div class="item-wrapper d-flex justify-content-between">
+                    <div class="item-left">
+                      <h5>The Cracker Barrel's Country Boy Breakfast</h5>
+                      <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum </p>
+                    </div>
+                    <div class="item-right">
+                      <span class="item-price">
+                      <span class="price-symbol">$</span>
+                        25.0</span>
+                      <div class="item-btn">
+                        <a href="#">Order</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item-wrapper d-flex justify-content-between">
+                    <div class="item-left">
+                      <h5>Uncle Herschel's Favorite</h5>
+                      <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum </p>
+                    </div>
+                    <div class="item-right">
+                      <span class="item-price">
+                      <span class="price-symbol">$</span>
+                        45.0</span>
+                      <div class="item-btn">
+                        <a href="#">Order</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item-wrapper d-flex justify-content-between">
+                    <div class="item-left">
+                      <h5>Grandpa's Country Fried Breakfast</h5>
+                      <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum </p>
+                    </div>
+                    <div class="item-right">
+                      <span class="item-price">
+                      <span class="price-symbol">$</span>
+                        30.0</span>
+                      <div class="item-btn">
+                        <a href="#">Order</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item-wrapper d-flex justify-content-between">
+                    <div class="item-left">
+                      <h5>Old Timer's Meat Breakfast</h5>
+                      <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum </p>
+                    </div>
+                    <div class="item-right">
+                      <span class="item-price">
+                      <span class="price-symbol">$</span>
+                        12.0</span>
+                      <div class="item-btn">
+                        <a href="#">Order</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item-wrapper d-flex justify-content-between">
+                    <div class="item-left">
+                      <h5>Chinese Chicken Bread Spicy Soup</h5>
+                      <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum </p>
+                    </div>
+                    <div class="item-right">
+                      <span class="item-price">
+                      <span class="price-symbol">$</span>
+                        12.0</span>
+                      <div class="item-btn">
+                        <a href="#">Order</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="testimonials py-5 my-5">
+        <div class="container py-5">
+          <div class="row">
+            <div class="section-title text-center">
+              <h5>Testimonial</h5>
+              <h2>Our Customer Says</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="testimonial-slider-wrapper px-5 my-5">
+              <div class="slider-content py-5 mx-5">
+                <div class="testi-content">
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto vel ipsa dolore sunt vitae, culpa, dolor reiciendis facilis sed blanditiis repellat incidunt impedit iusto? Odio veniam beatae veritatis adipisci a!</p>
+                </div>
+                <div class="testi-info">
+                  <span class="name">Timothy Doe</span>
+                  <span class="position">Customer</span>
+                </div>
+              </div>
+              <div class="slider-nav">
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
     </main>
     <footer></footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
