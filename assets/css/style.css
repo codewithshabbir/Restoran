@@ -616,12 +616,27 @@ header.scrolled {
 /* services cards end */
 
 /* about us start */
+.about-us {
+  background-image: url('./../images/about-bg.jpg');
+  background-position: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
 
 .about-us .about-content .section-title{
   position: relative;
   display: inline;
   font-family: "Pacifico", cursive;
   color: var(--primary-color);
+}
+
+.about-us .about-content {
+  color: var(--text-color-white);
+}
+
+.about-extra h6 {
+  color: var(--text-color-white);
 }
 
 .about-img-box > div > div:nth-child(2) > img {
@@ -659,7 +674,10 @@ header.scrolled {
   position: relative;
 }
 
-.our-menu .section-title h5::before, .our-menu .section-title h5::after,  .testimonials .section-title h5::before, .testimonials .section-title h5::after{
+.our-menu .section-title h5::before, .our-menu .section-title h5::after, 
+.testimonials .section-title h5::before, .testimonials .section-title h5::after,
+.our-chefs .section-title h5::before, .our-chefs .section-title h5::after
+{
   position: absolute;
   content: "";
   width: 45px;
@@ -670,7 +688,8 @@ header.scrolled {
   background: var(--primary-color);
 }
 
-.our-menu .section-title h5::before, .testimonials .section-title h5::before {
+.our-menu .section-title h5::before, .testimonials .section-title h5::before, 
+.our-chefs .section-title h5::before {
   left: -55px;
 }
 
@@ -809,7 +828,7 @@ header.scrolled {
 /* testimonial start */
 .testimonials {
   background-image: url('./../images/testi-bg.jpg');
-  background-color: black;
+  /* background-color: black; */
   background-position: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -933,3 +952,66 @@ header.scrolled {
   right: 58%;
 }
 
+
+/* our chef start */
+
+.our-chef-slider-wrapper .chef-slider-content i {
+  color: var(--secondary-color);
+}
+
+.our-chef-slider-wrapper .chef-slider-content i:hover{
+  color: var(--primary-color);
+}
+
+.our-chef-slider-wrapper .our-chef-slider {
+  position: relative;
+}
+
+.our-chef-slider-wrapper .our-chef-slider::before {
+  content: '';
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background-color: transparent;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  z-index: 0;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center the element */
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.our-chef-slider-wrapper .our-chef-slider img {
+  position: relative;
+}
+
+.our-chef-slider-wrapper .slick-current .our-chef-slider::before {
+  background-color: var(--primary-color);
+  transition: all 0.3s linear;
+}
+
+/* .our-chef-slider-wrapper .slick-current .our-chef-slider img {
+  width: 220px;
+  transition: all 0.3s linear;
+} */
+
+.our-chef-slider-wrapper .slide-arrow.prev-arrow, 
+.our-chef-slider-wrapper .slide-arrow.next-arrow {
+  position: absolute;
+  top: 48%;
+  width: auto;
+  font-size: 16px;
+  color: var(--text-color-white);
+  border: 2px solid #ededed;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  line-height: 36px;
+  text-align: center;
+}
+
+.our-chef-slider-wrapper .slide-arrow.next-arrow {
+  right: 0;
+}

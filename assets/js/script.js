@@ -134,13 +134,11 @@ $('#our-menus').on('beforeChange', function(event, slick, currentSlide, nextSlid
 
 
 // testimonial slider
-$(document).ready(function() {
-  // Initialize the slider for the testimonials
   $('.testimonials .slider-content').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
-    fade: true,
+    fade: false,
     speed: 300,
     asNavFor: '.testimonials .slider-nav',
     draggable: true,
@@ -162,15 +160,31 @@ $(document).ready(function() {
     infinite: true,
   });
 
-  // Manually handle centering the active slide
-  $('.testimonials .slider-nav').on('afterChange', function(event, slick, currentSlide) {
-    // Remove the active class from all thumbnails
-    $('.slider-nav-img').removeClass('active');
-    
-    // Add the active class to the current centered thumbnail
-    $('.slider-nav-img').eq(currentSlide + 1).addClass('active');
 
-    // Center the active slide
-    $('.testimonials .slider-nav').slick('slickGoTo', currentSlide);
+
+
+  // our chef slider
+
+  $('.our-chefs .our-chef-slider-wrapper').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    arrows: true,
+    focusOnSelect: true,
+    centerMode: true,  // Center the active slide
+    centerPadding: '0px',
+    fade: false,
+    speed: 300,
+    draggable: false,
+    swipe: false,
+     prevArrow: '<button class="slide-arrow prev-arrow"><i class="fas fa-chevron-left"></i></button>',
+    nextArrow: '<button class="slide-arrow next-arrow"><i class="fas fa-chevron-right"></i></button>',
+    responsive: [
+      {
+        breakpoint: 990,
+        settings: {
+          slidesToShow: 1,
+        }
+      }
+    ]
   });
-});
+
