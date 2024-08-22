@@ -1,11 +1,45 @@
 // Header Start
 
+var getHubergerIcon = document.getElementById("hamburger");
+var getHubergerCrossIcon = document.getElementById("hamburger-cross");
+var getMobileMenu = document.getElementById("mobile-menu");
+
+getHubergerIcon.addEventListener("click", function () {
+    getMobileMenu.style.transform = "translateX(0%)";
+});
+ 
+function closeMenu() {
+    getMobileMenu.style.transform = "translateX(-100%)";
+}
+
+getHubergerCrossIcon.addEventListener("click", closeMenu);
+
+document.addEventListener("click", function(event) {
+    var isClickInsideMenu = getMobileMenu.contains(event.target);
+    var isClickOnIcon = getHubergerIcon.contains(event.target);
+
+    if (!isClickInsideMenu && !isClickOnIcon) {
+        closeMenu();
+    }
+});
+
+   
+
 // Search bar functionality
 const searchBtn = document.getElementById("searchBtn");
+const searchBtnMobile = document.getElementById("searchBtnMobile");
 const closeBtn = document.getElementById("search-close-btn");
 const searchCon = document.getElementById("search-container");
 
 searchBtn.addEventListener("click", (event) => {
+  event.preventDefault();
+  searchCon.classList.remove("d-none");
+  requestAnimationFrame(() => {
+    searchCon.classList.add("show");
+  });
+});
+
+searchBtnMobile.addEventListener("click", (event) => {
   event.preventDefault();
   searchCon.classList.remove("d-none");
   requestAnimationFrame(() => {
@@ -56,16 +90,18 @@ $('#our-menus').slick({
   asNavFor: '.slider-indicators-wrapper',
   draggable: false,
   swipe: false,
-  
 });
 $('.slider-indicators-wrapper').slick({
   slidesToShow: 5,
   slidesToScroll: 1,
   asNavFor: '#our-menus',
   dots: false,
+  arrows: true,
   focusOnSelect: true,
   draggable: false,
   swipe: false,
+  prevArrow: '<button class="slide-arrow prev-arrow"><i class="fas fa-chevron-left"></i></button>',
+  nextArrow: '<button class="slide-arrow next-arrow"><i class="fas fa-chevron-right"></i></button>',
   responsive: [
     {
       breakpoint: 991,
@@ -83,28 +119,28 @@ $('.slider-indicators-wrapper').slick({
   ]
 });
 
-$(".prev-btn").click(function () {
-  $(".slick-list").slick("slickPrev");
-});
+// $(".prev-btn").click(function () {
+//   $(".slick-list").slick("slickPrev");
+// });
 
-$(".next-btn").click(function () {
-  $(".slick-list").slick("slickNext");
-});
+// $(".next-btn").click(function () {
+//   $(".slick-list").slick("slickNext");
+// });
 
-$(".prev-btn").addClass("slick-disabled");
+// $(".prev-btn").addClass("slick-disabled");
 
-$(".slick-list").on("afterChange", function () {
-  if ($(".slick-prev").hasClass("slick-disabled")) {
-    $(".prev-btn").addClass("slick-disabled");
-  } else {
-    $(".prev-btn").removeClass("slick-disabled");
-  }
-  if ($(".slick-next").hasClass("slick-disabled")) {
-    $(".next-btn").addClass("slick-disabled");
-  } else {
-    $(".next-btn").removeClass("slick-disabled");
-  }
-});
+// $(".slick-list").on("afterChange", function () {
+//   if ($(".slick-prev").hasClass("slick-disabled")) {
+//     $(".prev-btn").addClass("slick-disabled");
+//   } else {
+//     $(".prev-btn").removeClass("slick-disabled");
+//   }
+//   if ($(".slick-next").hasClass("slick-disabled")) {
+//     $(".next-btn").addClass("slick-disabled");
+//   } else {
+//     $(".next-btn").removeClass("slick-disabled");
+//   }
+// });
 
 // Custom animation for bottom-to-top slide
 $('#our-menus').on('beforeChange', function(event, slick, currentSlide, nextSlide) {

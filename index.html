@@ -22,7 +22,7 @@
   </head>
   <body>
     <header>
-      <div class="container header my-3">
+      <div class="container header my-3 d-none d-lg-flex">
         <div class="logo">
           <a href="#">
             <i class="fa fa-utensils me-3"></i>
@@ -53,11 +53,6 @@
             </li>
             <li class="list-unstyled py-2">
               <a class="text-decoration-none text-uppercase p-4" href=""
-                >Blog</a
-              >
-            </li>
-            <li class="list-unstyled py-2">
-              <a class="text-decoration-none text-uppercase p-4" href=""
                 >Contact</a
               >
             </li>
@@ -70,6 +65,64 @@
           <a class="text-decoration-none" href="">
             <i class="fa fa-shopping-bag me-3"></i>
           </a>
+        </div>
+      </div>
+
+      <div class="d-flex justify-content-around py-3 align-items-center d-lg-none">
+        <div id="hamburger">
+          <i class="fa fa-2x fa-bars me-3 text-white"></i>
+        </div>
+        <div class="mobile-nav-logo">
+          <div class="logo">
+            <a href="#">
+              <i class="fa fa-utensils me-3"></i>
+              <h1 class="mb-0">Restoran</h1>
+            </a>
+          </div>
+        </div>
+        <div class="mobile-nav-icons">
+          <div class="icons">
+            <a class="text-decoration-none" id="searchBtnMobile" href="#">
+              <i class="fa fa-search me-3"></i>
+            </a>
+            <a class="text-decoration-none" href="">
+              <i class="fa fa-shopping-bag me-3"></i>
+            </a>
+          </div>
+        </div>
+        <div class="position-fixed w-75 bg-white h-100 top-0 start-0" id="mobile-menu">
+          <div id="hamburger-cross" class="d-flex justify-content-end align-items-center py-2">
+            <i class="fa fa-2x fa-plus me-3 "></i>
+          </div>
+          <div class="menus">
+            <ul class="d-flex flex-column ps-2 mb-0 mt-4">
+              <li class="list-unstyled py-2">
+                <a class="text-dark text-decoration-none text-uppercase p-4" href=""
+                  >Home</a
+                >
+              </li>
+              <li class="list-unstyled py-2">
+                <a class="text-dark text-decoration-none text-uppercase p-4" href=""
+                  >About</a
+                >
+              </li>
+              <li class="list-unstyled py-2">
+                <a class="text-dark text-decoration-none text-uppercase p-4" href=""
+                  >Reservation</a
+                >
+              </li>
+              <li class="list-unstyled py-2">
+                <a class="text-dark text-decoration-none text-uppercase p-4" href=""
+                  >Menu</a
+                >
+              </li>
+              <li class="list-unstyled py-2">
+                <a class="text-dark text-decoration-none text-uppercase p-4" href=""
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </header>
@@ -91,7 +144,7 @@
         <div class="container py-5">
           <div class="row">
             <div class="col-md-6 banner-content pe-5">
-              <h1>Enjoy Our <br> Delicious Meal</h1>
+              <h1 class="display-2">Enjoy Our <br> Delicious Meal</h1>
                 <p>
                   Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet
                 </p>
@@ -101,14 +154,14 @@
                 </div>
             </div>
             <div class="col-md-6 banner-img">
-              <img src="./assets/images/banner-img.png" alt="">
+              <img class="img img-fluid mt-5 mt-lg-0" src="./assets/images/banner-img.png" alt="">
             </div>
           </div>
         </div>
       </section>
       <section class="services my-5 py-5">
         <div class="container">
-          <div class="row">
+          <div class="row gy-4">
             <div class="col-md-3">
               <div class="cards px-4 py-5">
                 <div class="anim-layer"></div>
@@ -170,7 +223,7 @@
       </section>
       <section class="about-us py-5 my-5">
         <div class="container">
-          <div class="row g-5 align-items-center">
+          <div class="row gy-5 g-lg-5 align-items-center">
               <div class="col-lg-6 about-img-box">
                   <div class="row g-3">
                       <div class="col-6">
@@ -288,7 +341,7 @@
             <div>
               <div class="row my-5 py-3">
               <div class="col-lg-5">
-                <div>
+                <div class="pb-5 pb-lg-0">
                   <img width="90%" src="./assets/images/menu-slider-dessert.png" alt="">
                 </div>
               </div>
@@ -369,7 +422,7 @@
             <div>
               <div class="row my-5 py-3 ">
                 <div class="col-lg-5">
-                  <div>
+                  <div class="pb-5 pb-lg-0">
                     <img width="90%" src="./assets/images/menu-slider-dinner.png" alt="">
                   </div>
                 </div>
@@ -450,7 +503,7 @@
             <div>
               <div class="row my-5 py-3 ">
                 <div class="col-lg-5">
-                  <div>
+                  <div class="pb-5 pb-lg-0">
                     <img width="90%" src="./assets/images/menu-slider-dessert.png" alt="">
                   </div>
                 </div>
@@ -531,7 +584,7 @@
             <div>
               <div class="row my-5 py-3 ">
                 <div class="col-lg-5">
-                  <div>
+                  <div class="pb-5 pb-lg-0">
                     <img width="90%" src="./assets/images/menu-slider-lunch.png" alt="">
                   </div>
                 </div>
@@ -623,7 +676,7 @@
           </div>
           <div class="row">
             <div class="testimonial-slider-wrapper">
-              <div class="slider-content pt-5 pb-4 mx-5">
+              <div class="slider-content pt-5 pb-4 mx-4">
                 <div>
                   <div class="testi-content">
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto vel ipsa dolore sunt vitae, culpa, dolor reiciendis facilis sed blanditiis repellat incidunt impedit iusto? Odio veniam beatae veritatis adipisci a!</p>
@@ -691,7 +744,7 @@
             </div>
           </div>
 
-          <div class="row our-chef-slider-wrapper">
+          <div class="row our-chef-slider-wrapper py-5">
             <div class="col-lg-4">
               <div class="our-chef-slider d-flex flex-column align-items-center gap-4">
                 <img width="200px" src="./assets/images/team-1.png" alt="">
