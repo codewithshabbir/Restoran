@@ -58,13 +58,18 @@ closeBtn.addEventListener("click", () => {
 // Header End
 document.addEventListener('DOMContentLoaded', () => {
   const header = document.querySelector('header');
+  const headerClass = document.querySelector('.header');
 
   const checkScroll = () => {
     if (window.scrollY > 10) {
       header.classList.add('scrolled');
+      headerClass.classList.remove('my-3');
+      headerClass.classList.add('my-2');
       sessionStorage.setItem('scrolled', 'true');
     } else {
       header.classList.remove('scrolled');
+      headerClass.classList.add('my-3');
+      headerClass.classList.remove('my-2');
       sessionStorage.removeItem('scrolled');
     }
   };

@@ -287,6 +287,7 @@ button,
 .navbar {
   background-color: var(--heading-color);
   color: #fff;
+  transition: all 0.3s ease-in-out;
 }
 
 .card {
@@ -709,7 +710,8 @@ header.scrolled {
 
 .our-menu .section-title h5::before, .our-menu .section-title h5::after, 
 .testimonials .section-title h5::before, .testimonials .section-title h5::after,
-.our-chefs .section-title h5::before, .our-chefs .section-title h5::after
+.our-chefs .section-title h5::before, .our-chefs .section-title h5::after,
+.our-services .section-title h5::before, .our-services .section-title h5::after
 {
   position: absolute;
   content: "";
@@ -722,7 +724,7 @@ header.scrolled {
 }
 
 .our-menu .section-title h5::before, .testimonials .section-title h5::before, 
-.our-chefs .section-title h5::before {
+.our-chefs .section-title h5::before, .our-services .section-title h5::before {
   left: -55px;
 }
 
@@ -1071,4 +1073,140 @@ header.scrolled {
 }
 .our-chef-slider-wrapper .slide-arrow.prev-arrow {
   left: 10px;
+}
+
+
+
+/* start reservation */
+.reservation {
+  position: relative;
+}
+
+.reservation img {
+  position: absolute;
+    bottom: -7%;
+    left: 0;
+    width: 20%;
+}
+
+.reservation-bg {
+  position: relative;
+  height: 100vh;
+  background-size: cover;
+  background: url('./../images/reservation-bg.jpg');
+}
+
+.reservation-bg::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 100%;
+}
+
+.reservation-content {
+  background-color: #090909;
+}
+
+.reservation-content span {
+  color: var(--primary-color);
+}
+
+.reservation-content .input i {
+  border-right: 1px solid #9d9d9d;
+  color: #9d9d9d;
+}
+
+.reservation-content .input{
+  background-color: rgba(255, 255, 255, 0.05);
+    border: 0;
+    border-radius: 0;
+    height: 40px;
+    color: #a2a2a2;
+    box-shadow: none;
+}
+
+.reservation-content .input input, .reservation-content .input select, .reservation-content .input select:focus {
+  outline: none;
+  color: #9d9d9d;
+  box-shadow: none;
+}
+
+.reservation-content .input select option {
+  background-color: #090909;
+}
+
+.reservation .reservation-content h2 {
+  position: relative;
+  font-family: "Pacifico", cursive;
+  font-weight: 300;
+}
+
+.reservation .reservation-content h2::after,
+.reservation .reservation-content h2::before
+{
+  position: absolute;
+  content: "";
+  width: 45px;
+  height: 2px;
+  top: 50%;
+  right: 0px;
+  margin-top: -1px;
+  background: var(--primary-color);
+}
+
+.reservation .reservation-content h2::before {
+  left: 0px;
+}
+
+
+/* our services start */
+
+.icon-box {
+  position: relative;
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  align-content: center;
+  text-align: center;
+  border: 1px dashed #7b7b7b;
+  margin-bottom: 20px;
+  background-position: center;
+  transition-duration: .5s;
+}
+
+.icon-box > .number {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 15px;
+  border-radius: 50%;
+  border: 2px solid #f3f3f3;
+  padding: 4px 12px;
+  background-color: #fff;
+  color: #3f3e44;
+}
+
+.icon-box:hover > .number {
+  border: 2px solid var(--text-color-white);
+  background-color: var(--primary-color);
+  color: var(--text-color-white);
+}
+
+.icon-box:hover {
+  background-color: var(--primary-color);
+}
+
+.icon-box:hover i {
+  color: var(--text-color-white);
+}
+
+.icon-box > i {
+  color: var(--primary-color);
+}
+
+.our-services h4 {
+  font-family: "Pacifico", cursive;
+  font-weight: 300;
 }
