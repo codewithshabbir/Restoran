@@ -1303,3 +1303,112 @@ header.scrolled {
   transition: all 0.3s linear;
   color: var(--primary-color) !important;
 }
+
+
+/* subscribe now start */
+.subscribe-us {
+  position: relative;
+}
+
+.subscribe-us .content p {
+  margin-top: 4px;
+  font-size: 14px;
+}
+
+.subscribe-us .subscribe-form .input-form input{
+  height: 40px;
+  background-color: #f4f4f4;
+  box-shadow: none;
+  border: none;
+  outline: none;
+}
+
+.subscribe-us .subscribe-form .input-button {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  background-color: #f4f4f4;
+}
+
+.subscribe-us .subscribe-form .input-button a {
+  border-left: 1px solid #e2e2e2;
+}
+
+.subscribe-us .subscribe-form .input-button a i{
+  color: var(--primary-color);
+  padding: 0px 18px;
+}
+
+.subscribe-us img {
+  position: absolute;
+  width: 250px;
+  top: -50px;
+}
+
+/* start footer */
+
+footer {
+  padding-top: 100px;
+  padding-bottom: 40px;
+  background-color: #040609;
+  background-image: url('./../images/footer-bg.jpg');
+}
+
+footer .social-icons a{
+  background-color: #191c1e;
+  border-radius: 50%;
+  text-align: center;
+  padding: 10px 14px;
+}
+
+footer .social-icons a:hover {
+  transition: all 0.4s ease-in-out;
+  background-color: var(--primary-color);
+}
+
+footer .footer-content .content-desc {
+  border-bottom: 1px solid #3a3a3a;
+}
+
+footer p {
+  font-size: 14px;
+  color: #bcbac1;
+}
+
+.reservation-box {
+  margin-top: -130px;
+  background-image: url('./../images/ft-res-bg.jpg');
+  padding: 25px;
+}
+
+.reservation-box .reservation-wrapper {
+  padding: 25px;
+  border: var(--text-color-white) 1px solid;
+}
+
+.reservation-box .reservation-wrapper h2{
+  font-family: "Pacifico", cursive;
+  font-weight: 300;
+  padding-bottom: 20px;
+  color: white;
+  text-align: center;
+}
+
+.reservation-box .reservation-wrapper h3 {
+  text-align: center;
+  color: var(--text-color-white);
+}
+
+.reservation-box .reservation-wrapper p {
+  color: white;
+}
+
+@media screen and (max-width: 1200px) {
+  .reservation-box {
+    margin-top: 20px;
+  }
+
+  .reservation-date-time {
+    text-align: center;
+  }
+}

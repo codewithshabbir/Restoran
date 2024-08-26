@@ -22,7 +22,6 @@ document.addEventListener("click", function(event) {
         closeMenu();
     }
 });
-
    
 
 // Search bar functionality
@@ -229,3 +228,6 @@ $('#our-menus').on('beforeChange', function(event, slick, currentSlide, nextSlid
     ]
   });
 
+
+
+  document.getElementById('copyrightCurrentYear').textContent = new Date().getFullYear();
