@@ -1440,7 +1440,7 @@ footer p {
 
 /* Contact Us Page Start */
 
-.page-banner{
+.page-banner {
   background-image: url("./../images/pagetitle-contact.jpg");
   position: relative;
   /* background-position: center center; */
@@ -1453,7 +1453,7 @@ footer p {
 }
 
 .page-banner .banner-content::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -1508,7 +1508,6 @@ footer p {
   border-radius: 50%;
 }
 
-
 .contact-page .contact-us form {
   border: 4px solid #f6f6f6;
   padding: 40px 50px;
@@ -1529,7 +1528,7 @@ footer p {
 }
 
 .contact-page .contact-us .input-group .icon-wrapper i::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 5px;
   right: 0;
@@ -1538,7 +1537,8 @@ footer p {
   background-color: #e4e4e4;
 }
 
-.contact-page .contact-us .input-group input:focus, .contact-page .contact-us .input-group textarea:focus {
+.contact-page .contact-us .input-group input:focus,
+.contact-page .contact-us .input-group textarea:focus {
   box-shadow: none;
 }
 
@@ -1546,7 +1546,7 @@ footer p {
   border: 2px solid var(--primary-color);
 }
 
-.contact-page .contact-us .contact-info .contact-info-box .contact-icon-box{
+.contact-page .contact-us .contact-info .contact-info-box .contact-icon-box {
   width: 60px;
   height: 60px;
   display: flex;
@@ -1559,12 +1559,21 @@ footer p {
   transition: all 0.2s linear;
 }
 
-.contact-page .contact-us .contact-info .contact-info-box:hover .contact-icon-box {
+.contact-page
+  .contact-us
+  .contact-info
+  .contact-info-box:hover
+  .contact-icon-box {
   background-color: var(--primary-color);
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
-.contact-page .contact-us .contact-info .contact-info-box:hover .contact-icon-box i {
+.contact-page
+  .contact-us
+  .contact-info
+  .contact-info-box:hover
+  .contact-icon-box
+  i {
   color: white;
 }
 
@@ -1572,7 +1581,8 @@ footer p {
   font-size: 20px;
 }
 
-.form h2::before, .contact-info h2::before {
+.form h2::before,
+.contact-info h2::before {
   content: "";
   position: absolute;
   width: 100px;
@@ -1581,8 +1591,9 @@ footer p {
   background-color: var(--primary-color);
 }
 
-.form h2::after, .contact-info h2::after {
-  content: '';
+.form h2::after,
+.contact-info h2::after {
+  content: "";
   position: absolute;
   width: 6px;
   height: 6px;
@@ -1603,8 +1614,99 @@ footer p {
   }
 }
 
-
 /* Reservation Page Start */
 .reservation-page .banner {
-  background-image: url('./../images/pagetitle-reservation.jpg');
+  background-image: url("./../images/pagetitle-reservation.jpg");
+}
+
+.reservation-page .reservation-form form {
+  border: 4px solid #f6f6f6;
+  padding: 40px 50px;
+}
+
+.reservation-page .reservation-form .reservation-line span {
+  position: relative;
+  display: inline-block;
+  height: 2px;
+  width: 50px;
+  background-color: var(--primary-color);
+  margin-bottom: 40px;
+}
+
+.reservation-page .reservation-form .reservation-line span::before,
+.reservation-page .reservation-form .reservation-line span::after {
+  content: "";
+  width: 6px;
+  height: 6px;
+  top: -2.3px;
+  border-radius: 50px;
+  position: absolute;
+  background-color: var(--primary-color);
+}
+
+.reservation-page .reservation-form .reservation-line span::before {
+  left: 0;
+}
+.reservation-page .reservation-form .reservation-line span::after {
+  right: 0;
+}
+
+.reservation-page .reservation-form .input-group {
+  background-color: #f6f6f6;
+  margin-bottom: 30px;
+}
+
+.reservation-page .reservation-form .input-group i {
+  color: #9d9d9d;
+}
+
+.reservation-page .reservation-form .input-group input,
+.reservation-page .reservation-form .input-group select {
+  position: relative;
+  padding: 10px 0px;
+}
+
+.reservation-page .reservation-form .input-group .icon-wrapper i::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  right: 0;
+  width: 1px;
+  height: 30px;
+  background-color: #e4e4e4;
+}
+
+.reservation-page .reservation-form .input-group input:focus,
+.reservation-page .reservation-form .input-group textarea:focus,
+.reservation-page .reservation-form .input-group select:focus {
+  box-shadow: none;
+}
+
+.reservation-page .reservation-form .contact-button {
+  border: 2px solid var(--primary-color);
+}
+
+.reservation-page {
+  overflow: hidden;
+}
+
+.reservation-page .reservation-form form img {
+  position: absolute;
+  top: -60px;
+  right: -220px;
+  z-index: 1;
+}
+
+.reservation-page .reservation-form form p {
+  padding: 0px 140px;
+}
+
+@media screen and (max-width: 768px) {
+  .reservation-page .reservation-form form {
+    padding: 40px 20px;
+  }
+
+  .reservation-page .reservation-form form p {
+    padding: 0px;
+  }
 }
