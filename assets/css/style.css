@@ -1440,7 +1440,7 @@ footer p {
 
 /* Contact Us Page Start */
 
-.contact-page .banner {
+.page-banner{
   background-image: url("./../images/pagetitle-contact.jpg");
   position: relative;
   /* background-position: center center; */
@@ -1452,7 +1452,7 @@ footer p {
   height: 500px;
 }
 
-.contact-page .banner .banner-content::before {
+.page-banner .banner-content::before {
   content: '';
   position: absolute;
   top: 0;
@@ -1462,26 +1462,28 @@ footer p {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-.contact-page .banner .banner-content h2 {
+.page-banner .banner-content h2 {
   font-family: "Pacifico", cursive;
+  position: relative;
   font-weight: 400;
   word-spacing: 16px;
   z-index: 1;
 }
 
-.contact-page .banner .banner-content p {
+.page-banner .banner-content p {
+  position: relative;
   z-index: 1;
 }
 
-.contact-page .banner .banner-content .divider {
+.page-banner .banner-content .divider {
   position: relative;
   width: 100%;
   display: flex;
   justify-content: center;
 }
 
-.contact-page .banner .banner-content .dot::after,
-.contact-page .banner .banner-content .dot::before {
+.page-banner .banner-content .dot::after,
+.page-banner .banner-content .dot::before {
   content: "";
   position: absolute;
   height: 1px;
@@ -1490,21 +1492,22 @@ footer p {
   width: 100px;
 }
 
-.contact-page .banner .banner-content .dot::after {
+.page-banner .banner-content .dot::after {
   left: 18px;
 }
 
-.contact-page .banner .banner-content .dot::before {
+.page-banner .banner-content .dot::before {
   right: 18px;
 }
 
-.contact-page .banner .banner-content .dot {
+.page-banner .banner-content .dot {
   position: relative;
   width: 11px;
   height: 11px;
   border: 1px solid white;
   border-radius: 50%;
 }
+
 
 .contact-page .contact-us form {
   border: 4px solid #f6f6f6;
@@ -1590,7 +1593,7 @@ footer p {
 }
 
 @media screen and (max-width: 768px) {
-  .contact-page .banner {
+  .page-banner {
     height: 300px;
     padding-top: 60px;
   }
@@ -1598,4 +1601,10 @@ footer p {
   .contact-page .contact-us form {
     padding: 40px 20px;
   }
+}
+
+
+/* Reservation Page Start */
+.reservation-page .banner {
+  background-image: url('./../images/pagetitle-reservation.jpg');
 }
