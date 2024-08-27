@@ -1588,3 +1588,14 @@ footer p {
   border-radius: 50%;
   left: 100px;
 }
+
+@media screen and (max-width: 768px) {
+  .contact-page .banner {
+    height: 300px;
+    padding-top: 60px;
+  }
+
+  .contact-page .contact-us form {
+    padding: 40px 20px;
+  }
+}
