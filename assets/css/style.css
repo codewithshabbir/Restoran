@@ -1785,7 +1785,7 @@ footer p {
 .reservation-page .reservation-events .event-card .event-info {
   width: 80%;
   bottom: -40px;
-  left: 53px;
+  transform: translateX(12%);
   background-image: url('./../images/event-01.jpg');
 }
 .reservation-page .reservation-events .event-card .event-info::before {
