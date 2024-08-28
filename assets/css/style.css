@@ -1626,7 +1626,8 @@ footer p {
 
 .reservation-page .reservation-form .reservation-line span,
 .reservation-page .reservation-services .reservation-line span,
-.reservation-page .reservation-events .reservation-line span {
+.reservation-page .reservation-events .reservation-line span,
+.about-page .about-story .about-line span {
   position: relative;
   display: inline-block;
   height: 2px;
@@ -1640,7 +1641,9 @@ footer p {
 .reservation-page .reservation-services .reservation-line span::before,
 .reservation-page .reservation-services .reservation-line span::after,
 .reservation-page .reservation-events .reservation-line span::before,
-.reservation-page .reservation-events .reservation-line span::after {
+.reservation-page .reservation-events .reservation-line span::after,
+.about-page .about-story .about-line span::before,
+.about-page .about-story .about-line span::after {
   content: "";
   width: 6px;
   height: 6px;
@@ -1652,12 +1655,14 @@ footer p {
 
 .reservation-page .reservation-form .reservation-line span::before,
 .reservation-page .reservation-services .reservation-line span::before,
-.reservation-page .reservation-events .reservation-line span::before {
+.reservation-page .reservation-events .reservation-line span::before,
+.about-page .about-story .about-line span::before {
   left: 0;
 }
 .reservation-page .reservation-form .reservation-line span::after,
 .reservation-page .reservation-services .reservation-line span::after,
-.reservation-page .reservation-events .reservation-line span::after {
+.reservation-page .reservation-events .reservation-line span::after,
+.about-page .about-story .about-line span::after {
   right: 0;
 }
 
@@ -1805,4 +1810,76 @@ footer p {
 .reservation-page .reservation-events .event-card .event-info .cap{
   font-size: 14px;
   color: white;
+}
+
+
+/* about us page start */
+
+.about-page .about-story .story-timeline .story-indicators .image-box {
+  position: relative;
+  cursor: pointer;
+}
+
+.about-page .about-story .story-timeline .story-indicators .image-box:nth-child(1)::before {
+  content: '2000';
+}
+.about-page .about-story .story-timeline .story-indicators .image-box:nth-child(2)::before {
+  content: '2002';
+}
+.about-page .about-story .story-timeline .story-indicators .image-box:nth-child(3)::before {
+  content: '2004';
+}
+.about-page .about-story .story-timeline .story-indicators .image-box:nth-child(4)::before {
+  content: '2008';
+}
+.about-page .about-story .story-timeline .story-indicators .image-box:nth-child(5)::before {
+  content: '2012';
+}
+.about-page .about-story .story-timeline .story-indicators .image-box:nth-child(6)::before {
+  content: '2016';
+}
+
+.about-page .about-story .story-timeline .story-indicators .image-box::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: white;
+  font-size: 44px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.about-page .about-story .story-timeline .story-indicators .slick-list {
+  overflow: revert;
+}
+
+.about-page .about-story .story-timeline .story-indicators .image-box.slick-current::before,
+.about-page .about-story .story-timeline .story-indicators .image-box:hover::before {
+  display: none;
+}
+
+.about-page .about-story .story-timeline .story-indicators .image-box.slick-current {
+  -webkit-transform: scale(1.1, 1.1); 
+  transform: scale(1.1, 1.1);
+  z-index: 1;
+  transition: all 0.3s linear;
+}
+
+.about-page .about-story .story-timeline .story-indicators .image-box.slick-current img {
+  width: 100%;
+}
+
+.about-page .about-story .story-timeline .story-content p {
+  color: #616f7d;
+}
+
+@media screen and (max-width: 1200px) {
+  .about-page .about-story .story-timeline .story-indicators .slick-list {
+    overflow: hidden;
+  }
 }

@@ -230,4 +230,49 @@ $('#our-menus').on('beforeChange', function(event, slick, currentSlide, nextSlid
 
 
 
+
+
+  $('.story-content').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: false,
+    speed: 300,
+    asNavFor: '.story-indicators .row',
+    draggable: true,
+    swipe: true,
+  });
+
+  // Initialize the slider for the navigation thumbnails
+  $('.story-indicators > .row').slick({
+    slidesToShow: 6,
+    slidesToScroll: 1,
+    asNavFor: '.story-content',
+    dots: false,
+    focusOnSelect: true,
+    centerMode: true,  
+    centerPadding: '0px',
+    draggable: true,
+    swipe: true,
+    arrows: false,  
+    infinite: true,
+    prevArrow: '<button class="slide-arrow prev-arrow"><i class="fas fa-chevron-left"></i></button>',
+    nextArrow: '<button class="slide-arrow next-arrow"><i class="fas fa-chevron-right"></i></button>',
+    responsive: [
+      {
+        breakpoint: 991,
+        settings: {
+          slidesToShow: 1,
+        }
+      },
+      {
+        breakpoint: 990,
+        settings: {
+          slidesToShow: 1,
+        }
+      }
+    ]
+  });
+
+
   document.getElementById('copyrightCurrentYear').textContent = new Date().getFullYear();
