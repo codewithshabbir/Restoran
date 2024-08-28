@@ -1624,7 +1624,9 @@ footer p {
   padding: 40px 50px;
 }
 
-.reservation-page .reservation-form .reservation-line span {
+.reservation-page .reservation-form .reservation-line span,
+.reservation-page .reservation-services .reservation-line span,
+.reservation-page .reservation-events .reservation-line span {
   position: relative;
   display: inline-block;
   height: 2px;
@@ -1634,7 +1636,11 @@ footer p {
 }
 
 .reservation-page .reservation-form .reservation-line span::before,
-.reservation-page .reservation-form .reservation-line span::after {
+.reservation-page .reservation-form .reservation-line span::after,
+.reservation-page .reservation-services .reservation-line span::before,
+.reservation-page .reservation-services .reservation-line span::after,
+.reservation-page .reservation-events .reservation-line span::before,
+.reservation-page .reservation-events .reservation-line span::after {
   content: "";
   width: 6px;
   height: 6px;
@@ -1644,10 +1650,14 @@ footer p {
   background-color: var(--primary-color);
 }
 
-.reservation-page .reservation-form .reservation-line span::before {
+.reservation-page .reservation-form .reservation-line span::before,
+.reservation-page .reservation-services .reservation-line span::before,
+.reservation-page .reservation-events .reservation-line span::before {
   left: 0;
 }
-.reservation-page .reservation-form .reservation-line span::after {
+.reservation-page .reservation-form .reservation-line span::after,
+.reservation-page .reservation-services .reservation-line span::after,
+.reservation-page .reservation-events .reservation-line span::after {
   right: 0;
 }
 
@@ -1709,4 +1719,90 @@ footer p {
   .reservation-page .reservation-form form p {
     padding: 0px;
   }
+}
+
+
+
+/* Reservation Services Start*/
+.reservation-page .reservation-services {
+  position: relative;
+  background-image: url('./../images/reservation-services-bg.jpg');
+}
+
+.icon-box:hover {
+  background-color: transparent;
+}
+
+.reservation-page .reservation-services h4{
+  font-family: "Pacifico", cursive;
+  color: white;
+  font-weight: 300;
+}
+.reservation-page .reservation-services p {
+  color: white;
+}
+
+.reservation-page .reservation-services::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+/* Reservation Event Start */
+
+.reservation-page .reservation-events .event-card {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.16);
+}
+
+.reservation-page .reservation-events .event-card .event-date {
+  border-right: 1px solid #e4e4e4;
+}
+
+.reservation-page .reservation-events .event-card .event-date .event-day {
+  display: block;
+  margin-bottom: 4px;
+  line-height: 1;
+  font-size: 36px;
+}
+.reservation-page .reservation-events .event-card .event-date .event-month {
+  font-size: 16px;
+  margin-bottom: 0px;
+  color: var(--primary-color);
+  display: block;
+}
+
+.reservation-page .reservation-events .event-card .event-heading .heading p{
+  font-family: "Pacifico", cursive;
+  font-weight: 300;
+  font-size: 24px;
+}
+
+.reservation-page .reservation-events .event-card .event-info {
+  width: 80%;
+  bottom: -40px;
+  left: 53px;
+  background-image: url('./../images/event-01.jpg');
+}
+.reservation-page .reservation-events .event-card .event-info::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background-color: #e75b2acc;
+}
+
+.reservation-page .reservation-events .event-card .event-info .num{
+  font-size: 34px;
+  color: white;
+}
+
+.reservation-page .reservation-events .event-card .event-info .cap{
+  font-size: 14px;
+  color: white;
 }
