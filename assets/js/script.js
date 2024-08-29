@@ -250,7 +250,6 @@ $('#our-menus').on('beforeChange', function(event, slick, currentSlide, nextSlid
     asNavFor: '.story-content',
     dots: false,
     focusOnSelect: true,
-    centerMode: true,  
     centerPadding: '0px',
     draggable: true,
     swipe: true,
@@ -260,15 +259,9 @@ $('#our-menus').on('beforeChange', function(event, slick, currentSlide, nextSlid
     nextArrow: '<button class="slide-arrow next-arrow"><i class="fas fa-chevron-right"></i></button>',
     responsive: [
       {
-        breakpoint: 991,
+        breakpoint: 768,
         settings: {
-          slidesToShow: 1,
-        }
-      },
-      {
-        breakpoint: 990,
-        settings: {
-          slidesToShow: 1,
+          slidesToShow: 2,
         }
       }
     ]

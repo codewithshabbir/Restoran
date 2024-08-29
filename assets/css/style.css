@@ -1820,26 +1820,8 @@ footer p {
   cursor: pointer;
 }
 
-.about-page .about-story .story-timeline .story-indicators .image-box:nth-child(1)::before {
-  content: '2000';
-}
-.about-page .about-story .story-timeline .story-indicators .image-box:nth-child(2)::before {
-  content: '2002';
-}
-.about-page .about-story .story-timeline .story-indicators .image-box:nth-child(3)::before {
-  content: '2004';
-}
-.about-page .about-story .story-timeline .story-indicators .image-box:nth-child(4)::before {
-  content: '2008';
-}
-.about-page .about-story .story-timeline .story-indicators .image-box:nth-child(5)::before {
-  content: '2012';
-}
-.about-page .about-story .story-timeline .story-indicators .image-box:nth-child(6)::before {
-  content: '2016';
-}
 
-.about-page .about-story .story-timeline .story-indicators .image-box::before {
+.about-page .about-story .story-timeline .story-indicators .image-box .image-box-inner {
   position: absolute;
   top: 0;
   left: 0;
@@ -1858,8 +1840,9 @@ footer p {
   overflow: revert;
 }
 
-.about-page .about-story .story-timeline .story-indicators .image-box.slick-current::before,
-.about-page .about-story .story-timeline .story-indicators .image-box:hover::before {
+.about-page .about-story .story-timeline .story-indicators .image-box.slick-current .image-box-inner,
+.about-page .about-story .story-timeline .story-indicators .image-box .image-box-inner:hover,
+.about-page .about-story .story-timeline .story-indicators .image-box:hover .image-box-inner{
   display: none;
 }
 
@@ -1878,8 +1861,16 @@ footer p {
   color: #616f7d;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 768px) {
   .about-page .about-story .story-timeline .story-indicators .slick-list {
     overflow: hidden;
+    display: flex;
+    height: 200px;
+    flex-direction: column;
+    justify-content: center;
   }
+}
+
+.about-page .testimonials {
+  background-image: url('./../images/about-bg.jpg');
 }
