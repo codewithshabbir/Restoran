@@ -1627,7 +1627,8 @@ footer p {
 .reservation-page .reservation-form .reservation-line span,
 .reservation-page .reservation-services .reservation-line span,
 .reservation-page .reservation-events .reservation-line span,
-.about-page .about-story .about-line span {
+.about-page .about-story .about-line span,
+.about-page .our-special .about-line span {
   position: relative;
   display: inline-block;
   height: 2px;
@@ -1643,7 +1644,9 @@ footer p {
 .reservation-page .reservation-events .reservation-line span::before,
 .reservation-page .reservation-events .reservation-line span::after,
 .about-page .about-story .about-line span::before,
-.about-page .about-story .about-line span::after {
+.about-page .about-story .about-line span::after,
+.about-page .our-special .about-line span::before,
+.about-page .our-special .about-line span::after {
   content: "";
   width: 6px;
   height: 6px;
@@ -1656,13 +1659,15 @@ footer p {
 .reservation-page .reservation-form .reservation-line span::before,
 .reservation-page .reservation-services .reservation-line span::before,
 .reservation-page .reservation-events .reservation-line span::before,
-.about-page .about-story .about-line span::before {
+.about-page .about-story .about-line span::before,
+.about-page .our-special .about-line span::before {
   left: 0;
 }
 .reservation-page .reservation-form .reservation-line span::after,
 .reservation-page .reservation-services .reservation-line span::after,
 .reservation-page .reservation-events .reservation-line span::after,
-.about-page .about-story .about-line span::after {
+.about-page .about-story .about-line span::after,
+.about-page .our-special .about-line span::after {
   right: 0;
 }
 
@@ -1873,4 +1878,115 @@ footer p {
 
 .about-page .testimonials {
   background-image: url('./../images/about-bg.jpg');
+}
+
+
+
+/* our special start */
+
+.about-page .our-special .special-card {
+  background-color: white;
+  box-shadow: 0 0 8px 5px rgba(0, 0, 0, 0.05);
+  height: 410px;
+}
+
+.about-page .our-special .special-card:hover {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  background-image: url('./../images/featured-box-bg-1.jpg');
+  background-blend-mode: overlay;
+  background-size: cover;
+}
+
+
+
+.about-page .our-special .special-card::before,
+.about-page .our-special .special-card::after {
+  content: '';
+  position: absolute;
+  height: 1px;
+  width: 0;
+  background-color: white;
+  transition: width 0.6s cubic-bezier(0.57, -0.04, 0.32, 1.14);
+  transition-delay: 0.1s;
+}
+
+.about-page .our-special .special-card:hover::before,
+.about-page .our-special .special-card:hover::after {
+  width: calc(100% - 60px);
+}
+
+.about-page .our-special .special-card::before {
+  top: 30px;
+  right: 30px;
+}
+.about-page .our-special .special-card::after {
+  bottom: 30px;
+  left: 30px;
+}
+
+.about-page .our-special .special-card .box-inner::before,
+.about-page .our-special .special-card .box-inner::after {
+  position: absolute;
+  content: '';
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.about-page .our-special .special-card .box-inner::before {
+  top: 29px;
+  right: 30px;
+}
+.about-page .our-special .special-card .box-inner::after {
+  bottom: 29px;
+  left: 30px;
+}
+
+
+.about-page .our-special .special-card .box-wrapper {
+  display: none;
+}
+
+.about-page .our-special .special-card:hover .box-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-page .our-special .special-card:hover .box-wrapper h2,
+.about-page .our-special .special-card:hover .box-wrapper p {
+  color: white;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.about-page .our-special .special-card:hover .box-wrapper h2 {
+  font-size: 30px;
+}
+
+.about-page .our-special .special-card:hover .box-wrapper p {
+  font-size: 14px;
+}
+
+.about-page .our-special .special-card:hover .box-wrapper .book-a-table {
+  width: auto;
+  margin: auto;
+}
+
+.about-page .our-special .special-card:hover .box-wrapper .book-a-table a {
+  font-size: 14px;
+  padding: 10px 24px;
+}
+
+.about-page .our-special .special-card:hover .box-showcase {
+  display: none;
+}
+
+.about-page .our-special .special-card .box-showcase h2 {
+  color: var(--primary-color);
+  font-size: 30px; 
+  font-weight: 700;
 }
