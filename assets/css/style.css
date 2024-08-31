@@ -1370,6 +1370,34 @@ header.scrolled {
   top: -50px;
 }
 
+/* back to top start */
+
+#back-to-top {
+  position: fixed;
+  bottom: 20px;  
+  right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background-color: var(--primary-color);
+  text-decoration: none;
+  font-size: 20px;
+  border-radius: 50%;
+  border: 2px solid white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+#back-to-top i{
+  color: white;
+  transition: all 0.3s ease-out;
+}
+
+#back-to-top:hover i {
+  transform: translateY(-4px);
+}
+
 /* start footer */
 
 footer {
