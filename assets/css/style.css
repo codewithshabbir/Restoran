@@ -1647,8 +1647,9 @@ footer p {
   background-image: url("./../images/pagetitle-reservation.jpg");
 }
 
-.reservation-page .reservation-form form {
-  border: 4px solid #f6f6f6;
+.reservation-page .reservation-form form,
+.about-page .reservation-form form {
+  border: 4px solid #dfdfdf;
   padding: 40px 50px;
 }
 
@@ -1656,7 +1657,8 @@ footer p {
 .reservation-page .reservation-services .reservation-line span,
 .reservation-page .reservation-events .reservation-line span,
 .about-page .about-story .about-line span,
-.about-page .our-special .about-line span {
+.about-page .our-special .about-line span,
+.about-page .reservation-form .reservation-line span {
   position: relative;
   display: inline-block;
   height: 2px;
@@ -1674,7 +1676,9 @@ footer p {
 .about-page .about-story .about-line span::before,
 .about-page .about-story .about-line span::after,
 .about-page .our-special .about-line span::before,
-.about-page .our-special .about-line span::after {
+.about-page .our-special .about-line span::after,
+.about-page .reservation-form .reservation-line span::before,
+.about-page .reservation-form .reservation-line span::after {
   content: "";
   width: 6px;
   height: 6px;
@@ -1688,33 +1692,40 @@ footer p {
 .reservation-page .reservation-services .reservation-line span::before,
 .reservation-page .reservation-events .reservation-line span::before,
 .about-page .about-story .about-line span::before,
-.about-page .our-special .about-line span::before {
+.about-page .our-special .about-line span::before,
+.about-page .reservation-form .reservation-line span::before {
   left: 0;
 }
 .reservation-page .reservation-form .reservation-line span::after,
 .reservation-page .reservation-services .reservation-line span::after,
 .reservation-page .reservation-events .reservation-line span::after,
 .about-page .about-story .about-line span::after,
-.about-page .our-special .about-line span::after {
+.about-page .our-special .about-line span::after,
+.about-page .reservation-form .reservation-line span::after {
   right: 0;
 }
 
-.reservation-page .reservation-form .input-group {
+.reservation-page .reservation-form .input-group,
+.about-page .reservation-form .input-group {
   background-color: #f6f6f6;
   margin-bottom: 30px;
 }
 
-.reservation-page .reservation-form .input-group i {
+.reservation-page .reservation-form .input-group i,
+.about-page .reservation-form .input-group i {
   color: #9d9d9d;
 }
 
 .reservation-page .reservation-form .input-group input,
-.reservation-page .reservation-form .input-group select {
+.reservation-page .reservation-form .input-group select,
+.about-page .reservation-form .input-group input,
+.about-page .reservation-form .input-group select {
   position: relative;
   padding: 10px 0px;
 }
 
-.reservation-page .reservation-form .input-group .icon-wrapper i::after {
+.reservation-page .reservation-form .input-group .icon-wrapper i::after,
+.about-page .reservation-form .input-group .icon-wrapper i::after {
   content: "";
   position: absolute;
   top: 5px;
@@ -1726,11 +1737,15 @@ footer p {
 
 .reservation-page .reservation-form .input-group input:focus,
 .reservation-page .reservation-form .input-group textarea:focus,
-.reservation-page .reservation-form .input-group select:focus {
+.reservation-page .reservation-form .input-group select:focus,
+.about-page .reservation-form .input-group input:focus,
+.about-page .reservation-form .input-group textarea:focus,
+.about-page .reservation-form .input-group select:focus {
   box-shadow: none;
 }
 
-.reservation-page .reservation-form .contact-button {
+.reservation-page .reservation-form .contact-button,
+.about-page .reservation-form .contact-button {
   border: 2px solid var(--primary-color);
 }
 
@@ -1745,16 +1760,19 @@ footer p {
   z-index: 1;
 }
 
-.reservation-page .reservation-form form p {
+.reservation-page .reservation-form form p,
+.about-page .reservation-form form p {
   padding: 0px 140px;
 }
 
 @media screen and (max-width: 768px) {
-  .reservation-page .reservation-form form {
+  .reservation-page .reservation-form form,
+  .about-page .reservation-form form {
     padding: 40px 20px;
   }
 
-  .reservation-page .reservation-form form p {
+  .reservation-page .reservation-form form p,
+  .about-page .reservation-form form p {
     padding: 0px;
   }
 }
@@ -2017,4 +2035,62 @@ footer p {
   color: var(--primary-color);
   font-size: 30px; 
   font-weight: 700;
+}
+
+
+/* our partner start */
+
+.our-partner .partner-slider {
+  border-top: 1px solid #B7B7B7;
+}
+
+/* counter start */
+
+.counter {
+  background-color: #F8F8F8;
+  position: relative;
+  overflow: hidden;
+}
+
+.counter-before {
+  position: absolute;
+  top: 0;
+  right: -150px;
+}
+
+.counter-after {
+  position: absolute;
+  bottom: 0;
+  left: -100px;
+}
+
+.counter .counter-box .counter-info {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+
+.counter .counter-box .counter-info::before {
+  content: '';
+  height: 1px;
+  width: 50px;
+  background-color: #d8d8d8;
+  position: absolute;
+  bottom: 0;
+}
+
+.counter .counter-box .number {
+  font-family: "Pacifico", cursive;
+  font-size: 60px;
+  font-weight: 300;
+  color: var(--primary-color);
+  line-height: 1;
+}
+
+.counter .counter-box .heading {
+  font-size: 16px;
+  font-family: "Pacifico", cursive;
+  color: black;
 }
