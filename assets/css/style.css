@@ -659,7 +659,8 @@ header.scrolled {
   background-size: cover;
 }
 
-.about-us .about-content .section-title {
+.about-us .about-content .section-title,
+.menu-page .chef-choise .section-title {
   position: relative;
   display: inline;
   font-family: "Pacifico", cursive;
@@ -720,7 +721,9 @@ header.scrolled {
 .our-gallery .section-title h5::before,
 .our-gallery .section-title h5::after,
 .our-blog .section-title h5::before,
-.our-blog .section-title h5::after {
+.our-blog .section-title h5::after,
+.chef-choise .section-title h5::before,
+.chef-choise .section-title h5::after {
   position: absolute;
   content: "";
   width: 45px;
@@ -738,7 +741,7 @@ header.scrolled {
 .our-gallery .section-title h5::before,
 .our-gallery .section-title h5::before,
 .our-blog .section-title h5::before,
-.our-blog .section-title h5::before {
+.chef-choise .section-title h5::before {
   left: -55px;
 }
 
@@ -813,25 +816,45 @@ header.scrolled {
   background-color: var(--border-color);
 }
 
-.our-menu .item-wrapper {
+.our-menu .item-wrapper,
+.lunch-time .item-wrapper,
+.chef-choise .item-wrapper {
   margin-bottom: 25px;
 }
 
-.our-menu .item-wrapper .item-left {
+
+.our-menu .item-wrapper .item-left,
+.lunch-time .item-wrapper .item-left,
+.chef-choise .item-wrapper .item-left {
   width: 85%;
   overflow: hidden;
 }
 
-.our-menu .item-wrapper .item-left h5 {
+.our-menu .item-wrapper .item-left h5,
+.lunch-time .item-wrapper .item-left h5,
+.chef-choise .item-wrapper .item-left h5 {
   color: var(--text-color);
 }
 
-.our-menu .item-wrapper .item-left p {
+.chef-choise .item-wrapper .item-left h5 {
+  font-size: 18px;
+}
+
+.our-menu .item-wrapper .item-left p,
+.lunch-time .item-wrapper .item-left p,
+.chef-choise .item-wrapper .item-left p {
   font-size: 14px;
   padding-top: 4px;
 }
 
-.our-menu .item-wrapper .item-left h5::after {
+.chef-choise .item-wrapper .item-left p {
+  color: #7b7b7b;
+  font-size: 12px;
+}
+
+.our-menu .item-wrapper .item-left h5::after,
+.lunch-time .item-wrapper .item-left h5::after,
+.chef-choise .item-wrapper .item-left h5::after {
   content: "";
   position: absolute;
   width: 1000px;
@@ -841,13 +864,19 @@ header.scrolled {
 }
 
 .our-menu .item-wrapper .item-right .item-price,
-.our-menu .item-wrapper .item-right .price-symbol {
+.our-menu .item-wrapper .item-right .price-symbol,
+.lunch-time .item-wrapper .item-right .item-price,
+.lunch-time .item-wrapper .item-right .price-symbol,
+.chef-choise .item-wrapper .item-right .item-price,
+.chef-choise .item-wrapper .item-right .price-symbol {
   color: var(--primary-color);
   font-family: "Pacifico", cursive;
   font-size: 24px;
 }
 
-.our-menu .item-wrapper .item-right .price-symbol {
+.our-menu .item-wrapper .item-right .price-symbol,
+.lunch-time .item-wrapper .item-right .price-symbol,
+.chef-choise .item-wrapper .item-right .price-symbol  {
   vertical-align: super;
   font-size: 18px;
 }
@@ -1659,7 +1688,8 @@ footer p {
 .about-page .about-story .about-line span,
 .about-page .our-special .about-line span,
 .about-page .reservation-form .reservation-line span,
-.menu-page .our-menu .menu-line span {
+.menu-page .our-menu .menu-line span,
+.menu-page .lunch-time .menu-line span {
   position: relative;
   display: inline-block;
   height: 2px;
@@ -1681,7 +1711,9 @@ footer p {
 .about-page .reservation-form .reservation-line span::before,
 .about-page .reservation-form .reservation-line span::after,
 .menu-page .our-menu .menu-line span::before,
-.menu-page .our-menu .menu-line span::after {
+.menu-page .our-menu .menu-line span::after,
+.menu-page .lunch-time .menu-line span::before,
+.menu-page .lunch-time .menu-line span::after {
   content: "";
   width: 6px;
   height: 6px;
@@ -1697,7 +1729,8 @@ footer p {
 .about-page .about-story .about-line span::before,
 .about-page .our-special .about-line span::before,
 .about-page .reservation-form .reservation-line span::before,
-.menu-page .our-menu .menu-line span::before {
+.menu-page .our-menu .menu-line span::before,
+.menu-page .lunch-time .menu-line span::before {
   left: 0;
 }
 .reservation-page .reservation-form .reservation-line span::after,
@@ -1706,7 +1739,8 @@ footer p {
 .about-page .about-story .about-line span::after,
 .about-page .our-special .about-line span::after,
 .about-page .reservation-form .reservation-line span::after,
-.menu-page .our-menu .menu-line span::after {
+.menu-page .our-menu .menu-line span::after,
+.menu-page .lunch-time .menu-line span::after {
   right: 0;
 }
 
@@ -2104,4 +2138,38 @@ footer p {
 
 .menu-page .page-banner{
   background-image: url('./../images/pagetitle-menu.jpg');
+}
+
+/* chef choice start */
+
+.chef-choise {
+  background-image: url('./../images/bg1_0.jpg');
+  background-repeat: no-repeat;
+  background-position: contain;
+}
+
+.chef-choise .chef-choise-icons {
+  color: var(--text-color-white);
+  font-size: 24px;
+  display: flex;
+}
+
+.chef-choise .chef-choise-icons i {
+  border: 1px solid var(--text-color-white);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.chef-choise .item-wrapper {
+  opacity: 0.5; /* Inactive state */
+  transition: opacity 0.3s ease;
+}
+
+.chef-choise .item-wrapper.slick-current {
+  opacity: 1; /* Active state */
 }

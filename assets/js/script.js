@@ -270,5 +270,26 @@ $('.partner-slider').slick({
   ]
 });
 
+
+$('.chef-choise-slider').slick({
+  slidesToShow: 3,
+  vertical: true,
+  slidesToScroll: 1,
+  arrows: false,
+  fade: false,
+  speed: 300,
+  draggable: true,
+  swipe: true,
+});
+
+// Add click events for the chevron icons
+$('.chef-choise-icons .fa-chevron-up').on('click', function() {
+  $('.chef-choise-slider').slick('slickPrev');
+});
+
+$('.chef-choise-icons .fa-chevron-down').on('click', function() {
+  $('.chef-choise-slider').slick('slickNext');
+});
+
 // Update copyright year
 document.getElementById('copyrightCurrentYear').textContent = new Date().getFullYear();
