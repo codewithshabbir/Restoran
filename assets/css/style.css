@@ -1658,7 +1658,8 @@ footer p {
 .reservation-page .reservation-events .reservation-line span,
 .about-page .about-story .about-line span,
 .about-page .our-special .about-line span,
-.about-page .reservation-form .reservation-line span {
+.about-page .reservation-form .reservation-line span,
+.menu-page .our-menu .menu-line span {
   position: relative;
   display: inline-block;
   height: 2px;
@@ -1678,7 +1679,9 @@ footer p {
 .about-page .our-special .about-line span::before,
 .about-page .our-special .about-line span::after,
 .about-page .reservation-form .reservation-line span::before,
-.about-page .reservation-form .reservation-line span::after {
+.about-page .reservation-form .reservation-line span::after,
+.menu-page .our-menu .menu-line span::before,
+.menu-page .our-menu .menu-line span::after {
   content: "";
   width: 6px;
   height: 6px;
@@ -1693,7 +1696,8 @@ footer p {
 .reservation-page .reservation-events .reservation-line span::before,
 .about-page .about-story .about-line span::before,
 .about-page .our-special .about-line span::before,
-.about-page .reservation-form .reservation-line span::before {
+.about-page .reservation-form .reservation-line span::before,
+.menu-page .our-menu .menu-line span::before {
   left: 0;
 }
 .reservation-page .reservation-form .reservation-line span::after,
@@ -1701,7 +1705,8 @@ footer p {
 .reservation-page .reservation-events .reservation-line span::after,
 .about-page .about-story .about-line span::after,
 .about-page .our-special .about-line span::after,
-.about-page .reservation-form .reservation-line span::after {
+.about-page .reservation-form .reservation-line span::after,
+.menu-page .our-menu .menu-line span::after {
   right: 0;
 }
 
@@ -2093,4 +2098,10 @@ footer p {
   font-size: 16px;
   font-family: "Pacifico", cursive;
   color: black;
+}
+
+/* menu page start */
+
+.menu-page .page-banner{
+  background-image: url('./../images/pagetitle-menu.jpg');
 }

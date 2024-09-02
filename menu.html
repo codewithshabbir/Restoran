@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Restoran - Contact</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <header class="bg-white">
+      <div class="container header my-3 d-none d-lg-flex">
+        <div class="logo">
+          <a href="./index.html">
+            <i class="fa fa-utensils me-3 text-dark"></i>
+            <h1 class="mb-0 text-dark">Restoran</h1>
+          </a>
+        </div>
+        <div class="menus">
+          <ul class="d-flex mb-0">
+            <li class="list-unstyled py-2">
+              <a class="text-decoration-none text-uppercase p-4 text-dark" href="./index.html"
+                >Home</a
+              >
+            </li>
+            <li class="list-unstyled py-2">
+              <a class="text-decoration-none text-uppercase p-4 text-dark" href="./about.html"
+                >About</a
+              >
+            </li>
+            <li class="list-unstyled py-2">
+              <a class="text-decoration-none text-uppercase p-4 text-dark" href="./reservation.html"
+                >Reservation</a
+              >
+            </li>
+            <li class="list-unstyled py-2">
+              <a class="text-decoration-none text-uppercase p-4 text-dark" href="./menu.html"
+                >Menu</a
+              >
+            </li>
+            <li class="list-unstyled py-2">
+              <a class="text-decoration-none text-uppercase p-4 text-dark" href="./contact.html"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="icons">
+          <a class="text-decoration-none" id="searchBtn" href="#">
+            <i class="fa fa-search me-3 text-dark"></i>
+          </a>
+          <a class="text-decoration-none" href="">
+            <i class="fa fa-shopping-bag me-3 text-dark"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="d-flex justify-content-around py-3 align-items-center d-lg-none">
+        <div id="hamburger">
+          <i class="fa fa-2x fa-bars me-3 text-dark"></i>
+        </div>
+        <div class="mobile-nav-logo">
+          <div class="logo">
+            <a href="./index.html">
+              <i class="fa fa-utensils me-3 text-dark"></i>
+              <h1 class="mb-0 text-dark">Restoran</h1>
+            </a>
+          </div>
+        </div>
+        <div class="mobile-nav-icons">
+          <div class="icons">
+            <a class="text-decoration-none" id="searchBtnMobile" href="#">
+              <i class="fa fa-search me-3 text-dark"></i>
+            </a>
+            <a class="text-decoration-none" href="">
+              <i class="fa fa-shopping-bag me-3 text-dark"></i>
+            </a>
+          </div>
+        </div>
+        <div class="position-fixed w-75 bg-white h-100 top-0 start-0" id="mobile-menu">
+          <div id="hamburger-cross" class="d-flex justify-content-end align-items-center py-2">
+            <i class="fa fa-2x fa-plus me-3 "></i>
+          </div>
+          <div class="menus">
+            <ul class="d-flex flex-column ps-2 mb-0 mt-4">
+              <li class="list-unstyled py-2">
+                <a class="text-dark text-decoration-none text-uppercase p-4" href=""
+                  >Home</a
+                >
+              </li>
+              <li class="list-unstyled py-2">
+                <a class="text-dark text-decoration-none text-uppercase p-4" href="./about.html"
+                  >About</a
+                >
+              </li>
+              <li class="list-unstyled py-2">
+                <a class="text-dark text-decoration-none text-uppercase p-4" href="./reservation.html"
+                  >Reservation</a
+                >
+              </li>
+              <li class="list-unstyled py-2">
+                <a class="text-dark text-decoration-none text-uppercase p-4" href="./menu.html"
+                  >Menu</a
+                >
+              </li>
+              <li class="list-unstyled py-2">
+                <a class="text-dark text-decoration-none text-uppercase p-4" href="./contact.html"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="search-bar d-none" id="search-container">
+      <div class="close-btn" id="search-close-btn">
+        <i class="fa fa-close"></i>
+      </div>
+      <div class="search-bar-wrapper">
+        <input type="search" placeholder="Enter any text here..." />
+        <div class="search-button">
+          <a href="#"><i class="fa fa-search"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <main class="menu-page">
+        <section class="page-banner d-flex align-items-center">
+          <div class="container"> 
+            <div class="row">
+              <div class="banner-content">
+                <h2 class="text-white display-3 text-center">Menu</h2>
+                <div class="divider">
+                    <div class="dot mb-2"></div>
+                </div>
+                <p class="text-white mb-0 text-center">The various dishes are waiting for your coming to enjoy its</p>
+            </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="our-menu py-5 my-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="text-center display-6 fw-bolder">Breakfast Time</h2>
+                    <div class="menu-line d-flex justify-content-center align-items-center">
+                        <span></span>
+                    </div>
+                </div>
+              <div class="row  position-relative">
+                <div class="slider slider-indicators-wrapper justify-content-center">
+                  <div class="slider-indicators">
+                    <div class="indicators-icon active text-center">
+                      <i class="fas fa-coffee fa-2x"></i>
+                    </div>
+                    <div class="indicators-title text-center">
+                      <h5>
+                        Breakfast
+                      </h5>
+                    </div>
+                  </div>
+                  <div class="slider-indicators">
+                    <div class="indicators-icon text-center">
+                      <i class="fas fa-utensils fa-2x"></i>
+                    </div>
+                    <div class="indicators-title text-center">
+                      <h5>
+                        Lunch
+                      </h5>
+                    </div>
+                  </div>
+                  <div class="slider-indicators">
+                    <div class="indicators-icon text-center">
+                      <i class="fas fa-hamburger fa-2x"></i>
+                    </div>
+                    <div class="indicators-title text-center">
+                      <h5>
+                        Dinner
+                      </h5>
+                    </div>
+                  </div>
+                  <div class="slider-indicators">
+                    <div class="indicators-icon text-center">
+                      <i class="fas fa-ice-cream fa-2x"></i>
+                    </div>
+                    <div class="indicators-title text-center">
+                      <h5>
+                        Desserts
+                      </h5>
+                    </div>
+                  </div>
+                  <div class="slider-indicators">
+                    <div class="indicators-icon text-center">
+                      <i class="fas fa-cocktail fa-2x"></i>
+                    </div>
+                    <div class="indicators-title text-center">
+                      <h5>
+                        Drink
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="our-menus" class="slider">
+                <div>
+                  <div class="row my-5 py-3">
+                  <div class="col-lg-5">
+                    <div class="pb-5 pb-lg-0">
+                      <img width="90%" src="./assets/images/menu-slider-dessert.png" alt="">
+                    </div>
+                  </div>
+                  <div class="col-lg-7">
+                    <div class="item-wrapper d-flex justify-content-between">
+                      <div class="item-left">
+                        <h5>The Cracker Barrel's Country Boy Breakfast</h5>
+                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum </p>
+                      </div>
+                      <div class="item-right">
+                        <span class="item-price">
+                        <span class="price-symbol">$</span>
+                          25.0</span>
+                        <div class="item-btn">
+                          <a href="#">Order</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="item-wrapper d-flex justify-content-between">
+                      <div class="item-left">
+                        <h5>Uncle Herschel's Favorite</h5>
+                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum </p>
+                      </div>
+                      <div class="item-right">
+                        <span class="item-price">
+                        <span class="price-symbol">$</span>
+                          45.0</span>
+                        <div class="item-btn">
+                          <a href="#">Order</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="item-wrapper d-flex justify-content-between">
+                      <div class="item-left">
+                        <h5>Grandpa's Country Fried Breakfast</h5>
+                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum </p>
+                      </div>
+                      <div class="item-right">
+                        <span class="item-price">
+                        <span class="price-symbol">$</span>
+                          30.0</span>
+                        <div class="item-btn">
+                          <a href="#">Order</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="item-wrapper d-flex justify-content-between">
+                      <div class="item-left">
+                        <h5>Old Timer's Meat Breakfast</h5>
+                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum </p>
+                      </div>
+                      <div class="item-right">
+                        <span class="item-price">
+                        <span class="price-symbol">$</span>
+                          12.0</span>
+                        <div class="item-btn">
+                          <a href="#">Order</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="item-wrapper d-flex justify-content-between">
+                      <div class="item-left">
+                        <h5>Chinese Chicken Bread Spicy Soup</h5>
+                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum </p>
+                      </div>
+                      <div class="item-right">
+                        <span class="item-price">
+                        <span class="price-symbol">$</span>
+                          12.0</span>
+                        <div class="item-btn">
+                          <a href="#">Order</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+                <div>
+                  <div class="row my-5 py-3 ">
+                    <div class="col-lg-5">
+                      <div class="pb-5 pb-lg-0">
+                        <img width="90%" src="./assets/images/menu-slider-dinner.png" alt="">
+                      </div>
+                    </div>
+                    <div class="col-lg-7">
+                      <div class="item-wrapper d-flex justify-content-between">
+                        <div class="item-left">
+                          <h5>The Cracker Barrel's Country Boy Breakfast</h5>
+                          <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum </p>
+                        </div>
+                        <div class="item-right">
+                          <span class="item-price">
+                          <span class="price-symbol">$</span>
+                            25.0</span>
+                          <div class="item-btn">
+                            <a href="#">Order</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="item-wrapper d-flex justify-content-between">
+                        <div class="item-left">
+                          <h5>Uncle Herschel's Favorite</h5>
+                          <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum </p>
+                        </div>
+                        <div class="item-right">
+                          <span class="item-price">
+                          <span class="price-symbol">$</span>
+                            45.0</span>
+                          <div class="item-btn">
+                            <a href="#">Order</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="item-wrapper d-flex justify-content-between">
+                        <div class="item-left">
+                          <h5>Grandpa's Country Fried Breakfast</h5>
+                          <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum </p>
+                        </div>
+                        <div class="item-right">
+                          <span class="item-price">
+                          <span class="price-symbol">$</span>
+                            30.0</span>
+                          <div class="item-btn">
+                            <a href="#">Order</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="item-wrapper d-flex justify-content-between">
+                        <div class="item-left">
+                          <h5>Old Timer's Meat Breakfast</h5>
+                          <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum </p>
+                        </div>
+                        <div class="item-right">
+                          <span class="item-price">
+                          <span class="price-symbol">$</span>
+                            12.0</span>
+                          <div class="item-btn">
+                            <a href="#">Order</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="item-wrapper d-flex justify-content-between">
+                        <div class="item-left">
+                          <h5>Chinese Chicken Bread Spicy Soup</h5>
+                          <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum </p>
+                        </div>
+                        <div class="item-right">
+                          <span class="item-price">
+                          <span class="price-symbol">$</span>
+                            12.0</span>
+                          <div class="item-btn">
+                            <a href="#">Order</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div class="row my-5 py-3 ">
+                    <div class="col-lg-5">
+                      <div class="pb-5 pb-lg-0">
+                        <img width="90%" src="./assets/images/menu-slider-dessert.png" alt="">
+                      </div>
+                    </div>
+                    <div class="col-lg-7">
+                      <div class="item-wrapper d-flex justify-content-between">
+                        <div class="item-left">
+                          <h5>The Cracker Barrel's Country Boy Breakfast</h5>
+                          <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum </p>
+                        </div>
+                        <div class="item-right">
+                          <span class="item-price">
+                          <span class="price-symbol">$</span>
+                            25.0</span>
+                          <div class="item-btn">
+                            <a href="#">Order</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="item-wrapper d-flex justify-content-between">
+                        <div class="item-left">
+                          <h5>Uncle Herschel's Favorite</h5>
+                          <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum </p>
+                        </div>
+                        <div class="item-right">
+                          <span class="item-price">
+                          <span class="price-symbol">$</span>
+                            45.0</span>
+                          <div class="item-btn">
+                            <a href="#">Order</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="item-wrapper d-flex justify-content-between">
+                        <div class="item-left">
+                          <h5>Grandpa's Country Fried Breakfast</h5>
+                          <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum </p>
+                        </div>
+                        <div class="item-right">
+                          <span class="item-price">
+                          <span class="price-symbol">$</span>
+                            30.0</span>
+                          <div class="item-btn">
+                            <a href="#">Order</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="item-wrapper d-flex justify-content-between">
+                        <div class="item-left">
+                          <h5>Old Timer's Meat Breakfast</h5>
+                          <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum </p>
+                        </div>
+                        <div class="item-right">
+                          <span class="item-price">
+                          <span class="price-symbol">$</span>
+                            12.0</span>
+                          <div class="item-btn">
+                            <a href="#">Order</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="item-wrapper d-flex justify-content-between">
+                        <div class="item-left">
+                          <h5>Chinese Chicken Bread Spicy Soup</h5>
+                          <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum </p>
+                        </div>
+                        <div class="item-right">
+                          <span class="item-price">
+                          <span class="price-symbol">$</span>
+                            12.0</span>
+                          <div class="item-btn">
+                            <a href="#">Order</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div class="row my-5 py-3 ">
+                    <div class="col-lg-5">
+                      <div class="pb-5 pb-lg-0">
+                        <img width="90%" src="./assets/images/menu-slider-lunch.png" alt="">
+                      </div>
+                    </div>
+                    <div class="col-lg-7">
+                      <div class="item-wrapper d-flex justify-content-between">
+                        <div class="item-left">
+                          <h5>The Cracker Barrel's Country Boy Breakfast</h5>
+                          <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum </p>
+                        </div>
+                        <div class="item-right">
+                          <span class="item-price">
+                          <span class="price-symbol">$</span>
+                            25.0</span>
+                          <div class="item-btn">
+                            <a href="#">Order</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="item-wrapper d-flex justify-content-between">
+                        <div class="item-left">
+                          <h5>Uncle Herschel's Favorite</h5>
+                          <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum </p>
+                        </div>
+                        <div class="item-right">
+                          <span class="item-price">
+                          <span class="price-symbol">$</span>
+                            45.0</span>
+                          <div class="item-btn">
+                            <a href="#">Order</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="item-wrapper d-flex justify-content-between">
+                        <div class="item-left">
+                          <h5>Grandpa's Country Fried Breakfast</h5>
+                          <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum </p>
+                        </div>
+                        <div class="item-right">
+                          <span class="item-price">
+                          <span class="price-symbol">$</span>
+                            30.0</span>
+                          <div class="item-btn">
+                            <a href="#">Order</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="item-wrapper d-flex justify-content-between">
+                        <div class="item-left">
+                          <h5>Old Timer's Meat Breakfast</h5>
+                          <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum </p>
+                        </div>
+                        <div class="item-right">
+                          <span class="item-price">
+                          <span class="price-symbol">$</span>
+                            12.0</span>
+                          <div class="item-btn">
+                            <a href="#">Order</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="item-wrapper d-flex justify-content-between">
+                        <div class="item-left">
+                          <h5>Chinese Chicken Bread Spicy Soup</h5>
+                          <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum </p>
+                        </div>
+                        <div class="item-right">
+                          <span class="item-price">
+                          <span class="price-symbol">$</span>
+                            12.0</span>
+                          <div class="item-btn">
+                            <a href="#">Order</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </section>
+
+        <section class="lunch-time">
+            <div class="container">
+                <div class="row">
+                    <h2 class="text-center display-6 fw-bolder">Lunch Time</h2>
+                    <div class="menu-line d-flex justify-content-center align-items-center">
+                        <span></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="item-wrapper d-flex justify-content-between">
+                          <div class="item-left">
+                            <h5>The Cracker Barrel's Country Boy Breakfast</h5>
+                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum </p>
+                          </div>
+                          <div class="item-right">
+                            <span class="item-price">
+                            <span class="price-symbol">$</span>
+                              25.0</span>
+                            <div class="item-btn">
+                              <a href="#">Order</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="item-wrapper d-flex justify-content-between">
+                          <div class="item-left">
+                            <h5>Uncle Herschel's Favorite</h5>
+                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum </p>
+                          </div>
+                          <div class="item-right">
+                            <span class="item-price">
+                            <span class="price-symbol">$</span>
+                              45.0</span>
+                            <div class="item-btn">
+                              <a href="#">Order</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="item-wrapper d-flex justify-content-between">
+                          <div class="item-left">
+                            <h5>Grandpa's Country Fried Breakfast</h5>
+                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum </p>
+                          </div>
+                          <div class="item-right">
+                            <span class="item-price">
+                            <span class="price-symbol">$</span>
+                              30.0</span>
+                            <div class="item-btn">
+                              <a href="#">Order</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="item-wrapper d-flex justify-content-between">
+                          <div class="item-left">
+                            <h5>Old Timer's Meat Breakfast</h5>
+                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum </p>
+                          </div>
+                          <div class="item-right">
+                            <span class="item-price">
+                            <span class="price-symbol">$</span>
+                              12.0</span>
+                            <div class="item-btn">
+                              <a href="#">Order</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="item-wrapper d-flex justify-content-between">
+                          <div class="item-left">
+                            <h5>Chinese Chicken Bread Spicy Soup</h5>
+                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum </p>
+                          </div>
+                          <div class="item-right">
+                            <span class="item-price">
+                            <span class="price-symbol">$</span>
+                              12.0</span>
+                            <div class="item-btn">
+                              <a href="#">Order</a>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="item-wrapper d-flex justify-content-between">
+                          <div class="item-left">
+                            <h5>The Cracker Barrel's Country Boy Breakfast</h5>
+                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum </p>
+                          </div>
+                          <div class="item-right">
+                            <span class="item-price">
+                            <span class="price-symbol">$</span>
+                              25.0</span>
+                            <div class="item-btn">
+                              <a href="#">Order</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="item-wrapper d-flex justify-content-between">
+                          <div class="item-left">
+                            <h5>Uncle Herschel's Favorite</h5>
+                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum </p>
+                          </div>
+                          <div class="item-right">
+                            <span class="item-price">
+                            <span class="price-symbol">$</span>
+                              45.0</span>
+                            <div class="item-btn">
+                              <a href="#">Order</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="item-wrapper d-flex justify-content-between">
+                          <div class="item-left">
+                            <h5>Grandpa's Country Fried Breakfast</h5>
+                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum </p>
+                          </div>
+                          <div class="item-right">
+                            <span class="item-price">
+                            <span class="price-symbol">$</span>
+                              30.0</span>
+                            <div class="item-btn">
+                              <a href="#">Order</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="item-wrapper d-flex justify-content-between">
+                          <div class="item-left">
+                            <h5>Old Timer's Meat Breakfast</h5>
+                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum </p>
+                          </div>
+                          <div class="item-right">
+                            <span class="item-price">
+                            <span class="price-symbol">$</span>
+                              12.0</span>
+                            <div class="item-btn">
+                              <a href="#">Order</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="item-wrapper d-flex justify-content-between">
+                          <div class="item-left">
+                            <h5>Chinese Chicken Bread Spicy Soup</h5>
+                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum </p>
+                          </div>
+                          <div class="item-right">
+                            <span class="item-price">
+                            <span class="price-symbol">$</span>
+                              12.0</span>
+                            <div class="item-btn">
+                              <a href="#">Order</a>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="subscribe-us pb-5 my-5">
+          <img class="d-none d-lg-block" src="./assets/images/subscribe-us.png" alt="">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-2">
+              </div>
+              <div class="col-lg-8 d-flex flex-column flex-md-row align-items-lg-center">
+                <div class="content">
+                  <h5 class="display-6 text-black">Subcribe Us Now</h5>
+                  <p>
+                    Get more news and delicious dishes everyday from us
+                  </p>
+                </div>
+                <div class="subscribe-form d-flex ps-0 ms-0 ps-lg-5 ms-lg-5">
+                  <div class="input-form w-100">
+                    <input class="border-0 px-3 w-100" type="email" placeholder="Email">
+                  </div>
+                  <div class="input-button">
+                    <a class="text-decoration-none" href="#">
+                      <i class="fa fa-paper-plane"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+    </main>
+
+    <a href="#" id="back-to-top">
+      <i class="fa-solid fa-angles-up"></i>
+    </a>
+    
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="footer-content col-xl-8  px-4">
+            <div class="row">
+              <div class="col-lg-6 px-0">
+                <div class="logo">
+                  <a href="./index.html">
+                    <i class="fa fa-utensils me-3"></i>
+                    <h1 class="mb-0">Restoran</h1>
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-6 pt-4 pt-lg-0 d-flex align-items-center justify-content-start justify-content-lg-end">
+                <div class="social-icons d-flex">
+                  <ul class="d-flex mb-0 ps-0">
+                    <li class="mx-2"><a class="text-decoration-none text-white" href="#"><i class="fab fa-facebook"></i></a></li>
+                    <li class="mx-2"><a class="text-decoration-none text-white" href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li class="mx-2"><a class="text-decoration-none text-white" href="#"><i class="fab fa-pinterest"></i></a></li>
+                    <li class="mx-2"><a class="text-decoration-none text-white" href="#"><i class="fab fa-google-plus"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="row pt-5 content-desc">
+              <p class="px-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat Duis aute irure dolor.</p>
+            </div>
+            <div class="row">
+              <div class="d-flex flex-column flex-lg-row px-0 justify-content-between">
+                <div class="location d-flex align-items-center pe-2 py-3">
+                  <i class="fa-solid fa-location-dot text-white fa-2x border-bottom pb-2"></i>
+                  <div class="ps-3">
+                    <p class="mb-0">
+                      157 White Oak Drive Kansas City <br>
+                      689 Lynn Street South Boston
+                    </p>
+                  </div>
+                </div>
+                <div class="location d-flex align-items-center pe-2 py-3">
+                  <i class="fa-solid fa-mobile text-white fa-2x border-bottom pb-2"></i>
+                  <div class="ps-3">
+                    <p class="mb-0">
+                      (617)-276-8031 <br>
+                      (617)-276-8031
+                    </p>
+                  </div>
+                </div>
+                <div class="location d-flex align-items-center pe-2 py-3">
+                  <i class="fa-solid fa-envelope text-white fa-2x border-bottom pb-2"></i>
+                  <div class="ps-3">
+                    <p class="mb-0">
+                      admin@fooday.com <br>
+                      support@fooday.com
+                    </p>
+                  </div>
+                </div>
+            </div>
+            </div>
+          </div>
+          <div class="col-xl-4">
+            <div class="reservation-box">
+              <div class="reservation-wrapper">
+                <h2>Open Hour</h2>
+                <div class="reservation-date-time">
+                  <p>Tuesday: .......................... 7AM - 9PM</p>
+                  <p>Wednesday: ..................... 7AM - 9PM</p>
+                  <p>Thursday: ......................... 7AM - 9PM</p>
+                  <p>Friday: ............................... 7AM - 9PM</p>
+                  <p>Saturday: ........................... 7AM - 9PM</p>
+                  <p>Sunday: ............................. 7AM - 9PM</p>
+                  <p>Monday: ............................. Close</p>
+                </div>
+                <h2 class="pb-2">Reservation Numbers</h2>
+                <h3>(617)-276-8031</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <p class="text-center pt-4 pt-lg-0">&copy; <span id="copyrightCurrentYear"></span> <b> Restoran.</b> All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
