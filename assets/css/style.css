@@ -317,6 +317,71 @@ body::-webkit-scrollbar-thumb {
   background-color: var(--primary-color);
 }
 
+
+/* loader start */
+
+.loader {
+  background-color: var(--text-color-white);
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 12;
+}
+
+.loader p {
+  font-family: "Pacifico", cursive;
+  font-size: 60px;
+}
+
+.loader-icone{
+  font-size: 4em;
+  margin-bottom: 4px;
+  color: var(--primary-color);
+  animation: rotate 2000ms infinite;
+}
+
+.loader-ellipses{
+  display: flex;
+  width: 100px;
+  justify-content: space-between;
+}
+
+.loader-ellipses span{
+  background-color: var(--secondary-color);
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  opacity: 0;
+  animation: loader-grow 2000ms infinite alternate;
+}
+
+.loader-ellipses span:nth-child(2){
+  animation-delay: 400ms;
+}
+
+.loader-ellipses span:nth-child(3){
+  animation-delay: 800ms;
+}
+
+@keyframes loader-grow {
+  to{
+    transform: scale(1.2);
+    background-color: var(--primary-color);
+    opacity: 100%;
+  }
+}
+
+@keyframes rotate{
+  to{
+    transform: rotate(360deg);
+  }
+}
+
+
 /* Header Start */
 
 header {

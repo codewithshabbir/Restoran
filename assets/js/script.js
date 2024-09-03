@@ -1,3 +1,11 @@
+document.addEventListener("DOMContentLoaded", function() {
+  const loader = document.querySelector('.loader');
+  setTimeout(() => {
+    loader.style.opacity = '0';
+    loader.style.display = 'none';
+  }, 3000);
+});
+
 // Header functionality
 var getHamburgerIcon = document.getElementById("hamburger");
 var getHamburgerCrossIcon = document.getElementById("hamburger-cross");
@@ -323,7 +331,6 @@ shoppingbtnMobile.addEventListener('click', function(event) {
   shoppingCart.style.right = "0";
 });
 
-// Loop through each close button and attach the event listener
 cartClose.forEach(function(closeBtn) {
   closeBtn.addEventListener('click', function(event) {
     event.preventDefault();
