@@ -1,3 +1,6 @@
+AOS.init({
+  offset: '160', // 50% viewport height ka offset
+});
 document.addEventListener("DOMContentLoaded", function() {
   const loader = document.querySelector('.loader');
   setTimeout(() => {
