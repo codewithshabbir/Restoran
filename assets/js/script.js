@@ -58,6 +58,7 @@ closeBtn.addEventListener("click", () => {
   }, 500); // Delay hiding the search container to allow animation to complete
 });
 
+
 // Header scroll behavior
 document.addEventListener('DOMContentLoaded', () => {
   const header = document.querySelector('header');
@@ -293,3 +294,29 @@ $('.chef-choise-icons .fa-chevron-down').on('click', function() {
 
 // Update copyright year
 document.getElementById('copyrightCurrentYear').textContent = new Date().getFullYear();
+
+
+var shoppingbtn = document.getElementById('shoppingbutton');
+var shoppingbtnMobile = document.getElementById('shoppingbuttonMobile');
+var shoppingCart = document.querySelector('.shopping-cart');
+var cartClose = document.querySelectorAll('.shopping-cart-header > i');
+
+shoppingbtn.addEventListener('click', function(event) {
+  event.preventDefault();
+  console.log('chl');
+  shoppingCart.style.right = "0";
+});
+
+shoppingbtnMobile.addEventListener('click', function(event) {
+  event.preventDefault();
+  console.log('chl');
+  shoppingCart.style.right = "0";
+});
+
+// Loop through each close button and attach the event listener
+cartClose.forEach(function(closeBtn) {
+  closeBtn.addEventListener('click', function(event) {
+    event.preventDefault();
+    shoppingCart.style.right = "-450px";
+  });
+});
