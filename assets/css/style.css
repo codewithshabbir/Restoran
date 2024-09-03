@@ -239,6 +239,10 @@ body {
   overflow-x: hidden;
 }
 
+main {
+  overflow-x: hidden;
+}
+
 h1,
 h3,
 h4,
@@ -1675,6 +1679,7 @@ header.scrolled {
 /* start footer */
 
 footer {
+  overflow-x: hidden;
   padding-top: 100px;
   padding-bottom: 40px;
   background-color: #040609;
@@ -1703,7 +1708,6 @@ footer p {
 }
 
 .reservation-box {
-  overflow: hidden;
   margin-top: -130px;
   background-image: url("./../images/ft-res-bg.jpg");
   padding: 25px;
