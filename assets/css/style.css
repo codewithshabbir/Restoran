@@ -342,9 +342,6 @@ header.scrolled {
   transition: 0.3s all linear;
 }
 
-.logo {
-}
-
 .logo h1 {
   font-size: 2.5rem;
   color: var(--text-color-white);
@@ -2006,7 +2003,7 @@ footer p {
   background-image: url('./../images/reservation-services-bg.jpg');
 }
 
-.icon-box:hover {
+.reservation-page .icon-box:hover {
   background-color: transparent;
 }
 
@@ -2055,6 +2052,7 @@ footer p {
 
 .reservation-page .reservation-events .event-card .event-heading .heading p{
   font-family: "Pacifico", cursive;
+  color: #29272e;
   font-weight: 300;
   font-size: 24px;
 }

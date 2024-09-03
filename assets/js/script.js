@@ -70,6 +70,7 @@ document.addEventListener('DOMContentLoaded', () => {
       headerClass.classList.remove('my-3');
       headerClass.classList.add('my-2');
       sessionStorage.setItem('scrolled', 'true');
+      
     } else {
       header.classList.remove('scrolled');
       headerClass.classList.add('my-3');
@@ -281,6 +282,15 @@ $('.chef-choise-slider').slick({
   speed: 300,
   draggable: true,
   swipe: true,
+  responsive: [
+    {
+      breakpoint: 786,
+      settings: {
+        slidesToShow: 1.7,
+        slidesToScroll: 1,
+      }
+    }
+  ]
 });
 
 // Add click events for the chevron icons

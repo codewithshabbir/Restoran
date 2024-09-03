@@ -76,7 +76,7 @@
           <a class="text-decoration-none" id="searchBtn" href="#">
             <i class="fa fa-search me-3 text-dark"></i>
           </a>
-          <a class="text-decoration-none" href="">
+          <a class="text-decoration-none" id="shoppingbutton" href="#">
             <i class="fa fa-shopping-bag me-3 text-dark"></i>
           </a>
         </div>
@@ -101,7 +101,7 @@
             <a class="text-decoration-none" id="searchBtnMobile" href="#">
               <i class="fa fa-search me-3 text-dark"></i>
             </a>
-            <a class="text-decoration-none" href="">
+            <a class="text-decoration-none" id="shoppingbuttonMobile" href="#">
               <i class="fa fa-shopping-bag me-3 text-dark"></i>
             </a>
           </div>
@@ -121,7 +121,7 @@
               <li class="list-unstyled py-2">
                 <a
                   class="text-dark text-decoration-none text-uppercase p-4"
-                  href=""
+                  href="#"
                   >Home</a
                 >
               </li>
@@ -171,12 +171,106 @@
       </div>
     </div>
 
+    <div class="shopping-cart">
+      <div class="shopping-cart-header d-flex justify-content-between">
+        <h2>Review your Cart</h2>
+        <i class="fa fa-close"></i>
+      </div>
+      <div class="shopping-cart-body">
+        <div class="row shopping-cart-item d-flex justify-content-between">
+          <div class="col-2 d-flex align-items-center">
+            <img src="./assets/images/product-2a.jpg" alt="">
+          </div>
+          <div class="col-8">
+            <h3>The Cracker Barrel's Country Boy Breakfast</h3>
+            <div class="shopping-cart-counter">
+              <i class="fa fa-minus"></i>
+              <span>1</span>
+              <i class="fa fa-plus"></i>
+            </div>
+          </div>
+          <div class="col-2 item-price d-flex align-items-end">
+            <p class="mb-0 text-center">$ 25.0</p>
+          </div>
+        </div>
+        <div class="row shopping-cart-item d-flex justify-content-between">
+          <div class="col-2 d-flex align-items-center">
+            <img src="./assets/images/product-2b.jpg" alt="">
+          </div>
+          <div class="col-8">
+            <h3>Old Timer's Meat Breakfast</h3>
+            <div class="shopping-cart-counter">
+              <i class="fa fa-minus"></i>
+              <span>1</span>
+              <i class="fa fa-plus"></i>
+            </div>
+          </div>
+          <div class="col-2 item-price d-flex align-items-end">
+            <p class="mb-0 text-center">$ 12.0</p>
+          </div>
+        </div>
+        <div class="row shopping-cart-item d-flex justify-content-between">
+          <div class="col-2 d-flex align-items-center">
+            <img src="./assets/images/product-2c.jpg" alt="">
+          </div>
+          <div class="col-8">
+            <h3>Uncle Herschel's Favorite</h3>
+            <div class="shopping-cart-counter">
+              <i class="fa fa-minus"></i>
+              <span>1</span>
+              <i class="fa fa-plus"></i>
+            </div>
+          </div>
+          <div class="col-2 item-price d-flex align-items-end">
+            <p class="mb-0 text-center">$ 25.0</p>
+          </div>
+        </div>
+        <div class="row shopping-cart-item d-flex justify-content-between">
+          <div class="col-2 d-flex align-items-center">
+            <img src="./assets/images/product-2d.jpg" alt="">
+          </div>
+          <div class="col-8">
+            <h3>Grandpa's Country Fried Breakfast</h3>
+            <div class="shopping-cart-counter">
+              <i class="fa fa-minus"></i>
+              <span>1</span>
+              <i class="fa fa-plus"></i>
+            </div>
+          </div>
+          <div class="col-2 item-price d-flex align-items-end">
+            <p class="mb-0 text-center">$ 30.0</p>
+          </div>
+        </div>
+      </div>
+      <div class="shopping-cart-footer">
+        <div class="d-flex justify-content-between px-3 py-2">
+          <div>
+            <h2 class="mb-0">Subtotal</h2>
+            <p class="mb-0">Shipping & taxes calculated at checkout</p>
+          </div>
+          <div class="d-flex align-items-end">
+            <p class="footet-total-price mb-0">$ 92.0</p>
+          </div>
+        </div>
+          <div class="d-flex justify-content-between px-2">
+            <div class="footer-checkout">
+              <div class="anim-layer"></div>
+              <a href="#">Checkout</a>
+            </div>
+            <div class="footer-shopping">
+              <div class="anim-layer"></div>
+              <a href="#">Continue Shopping</a>
+            </div>
+          </div>
+      </div>
+    </div>
+
     <main class="about-page">
       <section class="page-banner d-flex align-items-center">
         <div class="container">
           <div class="row">
             <div class="banner-content">
-              <h2 class="text-white display-3 text-center">About Us</h2>
+              <h2 class="text-white display-6 fw-bold text-center">About Us</h2>
               <div class="divider">
                 <div class="dot mb-2"></div>
               </div>
@@ -192,7 +286,7 @@
       <section class="about-story mt-5 pt-5">
         <div class="container">
           <div class="row">
-            <h2 class="text-center display-6 fw-bolder">
+            <h2 class="text-center display-6 fw-bold">
               Restoran Glory Story
             </h2>
             <div
@@ -404,7 +498,7 @@
       <section class="our-special my-5 py-5">
         <div class="container">
           <div class="row">
-            <h2 class="text-center display-6 fw-bolder">
+            <h2 class="text-center display-6 fw-bold">
               Our Special
             </h2>
             <div class="about-line d-flex justify-content-center align-items-center">
@@ -560,7 +654,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <h2 class="text-center display-6 fw-bolder">Make Reservation</h2>
+                    <h2 class="text-center display-6 fw-bold">Make Reservation</h2>
                     <div class="reservation-line d-flex justify-content-center align-items-center">
                         <span></span>
                     </div>
