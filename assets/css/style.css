@@ -286,7 +286,6 @@ button,
 .header,
 .footer,
 .navbar {
-  overflow: hidden;
   background-color: var(--heading-color);
   color: #fff;
   transition: all 0.3s ease-in-out;
@@ -1704,6 +1703,7 @@ footer p {
 }
 
 .reservation-box {
+  overflow: hidden;
   margin-top: -130px;
   background-image: url("./../images/ft-res-bg.jpg");
   padding: 25px;
