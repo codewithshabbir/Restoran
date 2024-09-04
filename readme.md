@@ -1,6 +1,6 @@
-# Restoran - Restaurant Website Template
+# Restoran - Restaurant Website Template - Restaurant Bootstrap 5 Template
 
-![Restoran](https://codewithshabbir.github.io/Restoran/assets/img/template-screenshot.png)
+![Restoran](https://codewithshabbir.github.io/Restoran/assets/images/template-screenshot.png)
 
 Welcome to **Restoran**, a modern and responsive restaurant website template designed and developed using a combination of front-end languages, libraries, and frameworks. This template is perfect for creating professional restaurant websites that offer a sleek and user-friendly experience.
 
@@ -98,4 +98,4 @@ For any inquiries or feedback, feel free to reach out at:
 
 ## 📢 Hashtags
 
-#HTML #CSS #Bootstrap #JavaScript #WebDevelopment #ResponsiveDesign #RestaurantWebsite #FrontendDevelopment #WebDesign #AOS #SlickSlider #UIUX #OpenSource #GitHub #CodeWithShabbir #Netlify #SEO #FreeTemplate #WebDesigner #WebDeveloper
+#HTML #CSS #Bootstrap #JavaScript #WebDevelopment #ResponsiveDesign #RestaurantWebsite #FrontendDevelopment #WebDesign #AOS #SlickSlider #UIUX #OpenSource #GitHub #CodeWithShabbir #Bootstrap5 #Bootstrap5template #FreeTemplate #WebDesigner #WebDeveloper
