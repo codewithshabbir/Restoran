@@ -1,6 +1,6 @@
 # Restoran - Restaurant Website Template
 
-![Restoran](https://codewithshabbir.github.io/Restoran/assets/img/logo.png)
+![Restoran](https://codewithshabbir.github.io/Restoran/assets/img/template-screenshot.png)
 
 Welcome to **Restoran**, a modern and responsive restaurant website template designed and developed using a combination of front-end languages, libraries, and frameworks. This template is perfect for creating professional restaurant websites that offer a sleek and user-friendly experience.
 
