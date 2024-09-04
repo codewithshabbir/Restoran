@@ -239,9 +239,7 @@ body {
   overflow-x: hidden;
 }
 
-main {
-  overflow-x: hidden;
-}
+
 
 h1,
 h3,
@@ -536,7 +534,7 @@ header.scrolled {
   position: fixed;
   width: 450px;
   height: 100vh;
-  right: -450px;
+  right: -100vw;
   background-color: white;
   box-shadow: 7px 5px 15px -4px rgba(0, 0, 0, 0.75);
   z-index: 9;
@@ -554,6 +552,7 @@ header.scrolled {
   font-size: 24px;
 }
 .shopping-cart-header i {
+  cursor: pointer;
   font-size: 34px;
 }
 
@@ -696,17 +695,19 @@ header.scrolled {
 }
 
 @media (max-width: 990px) {
-  .shopping-cart {
-    width: 100%;
-    height: 92vh;
-  }
-
   .shopping-cart-item h3, .shopping-cart-footer p {
     font-size: 12px;
   }
 
   .footer-checkout a, .footer-shopping a {
     font-size: 10px;
+  }
+}
+
+@media (max-width: 400px) {
+  .shopping-cart {
+    width: 100%;
+    height: 92vh;
   }
 }
 
@@ -1679,7 +1680,7 @@ header.scrolled {
 /* start footer */
 
 footer {
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   padding-top: 100px;
   padding-bottom: 40px;
   background-color: #040609;
@@ -1742,6 +1743,10 @@ footer p {
 
   .reservation-date-time {
     text-align: center;
+  }
+
+  footer, main {
+    overflow-x: hidden;
   }
 }
 

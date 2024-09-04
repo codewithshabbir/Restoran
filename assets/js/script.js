@@ -1,5 +1,5 @@
 AOS.init({
-  offset: '160', // 50% viewport height ka offset
+  offset: '140', // 50% viewport height ka offset
 });
 document.addEventListener("DOMContentLoaded", function() {
   const loader = document.querySelector('.loader');
@@ -337,6 +337,6 @@ shoppingbtnMobile.addEventListener('click', function(event) {
 cartClose.forEach(function(closeBtn) {
   closeBtn.addEventListener('click', function(event) {
     event.preventDefault();
-    shoppingCart.style.right = "-450px";
+    shoppingCart.style.right = "-100vw";
   });
 });
