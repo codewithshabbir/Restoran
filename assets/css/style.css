@@ -1,70 +1,70 @@
 /* Heebo Fonts */
 @font-face {
   font-family: "Heebo";
-  src: url("/assets/fonts/Heebo/Heebo-VariableFont_wght.ttf") format("truetype");
+  src: url("./../fonts/Heebo/Heebo-VariableFont_wght.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Heebo";
-  src: url("/assets/fonts/Heebo/static/Heebo-Black.ttf") format("truetype");
+  src: url("./../fonts/Heebo/static/Heebo-Black.ttf") format("truetype");
   font-weight: 900;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Heebo";
-  src: url("/assets/fonts/Heebo/static/Heebo-Bold.ttf") format("truetype");
+  src: url("./../fonts/Heebo/static/Heebo-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Heebo";
-  src: url("/assets/fonts/Heebo/static/Heebo-ExtraBold.ttf") format("truetype");
+  src: url("./../fonts/Heebo/static/Heebo-ExtraBold.ttf") format("truetype");
   font-weight: 800;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Heebo";
-  src: url("/assets/fonts/Heebo/static/Heebo-ExtraLight.ttf") format("truetype");
+  src: url("./../fonts/Heebo/static/Heebo-ExtraLight.ttf") format("truetype");
   font-weight: 200;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Heebo";
-  src: url("/assets/fonts/Heebo/static/Heebo-Light.ttf") format("truetype");
+  src: url("./../fonts/Heebo/static/Heebo-Light.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Heebo";
-  src: url("/assets/fonts/Heebo/static/Heebo-Medium.ttf") format("truetype");
+  src: url("./../fonts/Heebo/static/Heebo-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Heebo";
-  src: url("/assets/fonts/Heebo/static/Heebo-Regular.ttf") format("truetype");
+  src: url("./../fonts/Heebo/static/Heebo-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Heebo";
-  src: url("/assets/fonts/Heebo/static/Heebo-SemiBold.ttf") format("truetype");
+  src: url("./../fonts/Heebo/static/Heebo-SemiBold.ttf") format("truetype");
   font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Heebo";
-  src: url("/assets/fonts/Heebo/static/Heebo-Thin.ttf") format("truetype");
+  src: url("./../fonts/Heebo/static/Heebo-Thin.ttf") format("truetype");
   font-weight: 100;
   font-style: normal;
 }
@@ -72,7 +72,7 @@
 /* Nunito Fonts */
 @font-face {
   font-family: "Nunito";
-  src: url("/assets/fonts/Nunito/Nunito-Italic-VariableFont_wght.ttf")
+  src: url("./../fonts/Nunito/Nunito-Italic-VariableFont_wght.ttf")
     format("truetype");
   font-weight: normal;
   font-style: italic;
@@ -80,7 +80,7 @@
 
 @font-face {
   font-family: "Nunito";
-  src: url("/assets/fonts/Nunito/Nunito-VariableFont_wght.ttf")
+  src: url("./../fonts/Nunito/Nunito-VariableFont_wght.ttf")
     format("truetype");
   font-weight: normal;
   font-style: normal;
@@ -88,7 +88,7 @@
 
 @font-face {
   font-family: "Nunito";
-  src: url("/assets/fonts/Nunito/static/Nunito-ExtraLightItalic.ttf")
+  src: url("./../fonts/Nunito/static/Nunito-ExtraLightItalic.ttf")
     format("truetype");
   font-weight: 200;
   font-style: italic;
@@ -96,21 +96,21 @@
 
 @font-face {
   font-family: "Nunito";
-  src: url("/assets/fonts/Nunito/static/Nunito-Italic.ttf") format("truetype");
+  src: url("./../fonts/Nunito/static/Nunito-Italic.ttf") format("truetype");
   font-weight: normal;
   font-style: italic;
 }
 
 @font-face {
   font-family: "Nunito";
-  src: url("/assets/fonts/Nunito/static/Nunito-Light.ttf") format("truetype");
+  src: url("./../fonts/Nunito/static/Nunito-Light.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Nunito";
-  src: url("/assets/fonts/Nunito/static/Nunito-LightItalic.ttf")
+  src: url("./../fonts/Nunito/static/Nunito-LightItalic.ttf")
     format("truetype");
   font-weight: 300;
   font-style: italic;
@@ -118,14 +118,14 @@
 
 @font-face {
   font-family: "Nunito";
-  src: url("/assets/fonts/Nunito/static/Nunito-Medium.ttf") format("truetype");
+  src: url("./../fonts/Nunito/static/Nunito-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Nunito";
-  src: url("/assets/fonts/Nunito/static/Nunito-MediumItalic.ttf")
+  src: url("./../fonts/Nunito/static/Nunito-MediumItalic.ttf")
     format("truetype");
   font-weight: 500;
   font-style: italic;
@@ -133,21 +133,21 @@
 
 @font-face {
   font-family: "Nunito";
-  src: url("/assets/fonts/Nunito/static/Nunito-Regular.ttf") format("truetype");
+  src: url("./../fonts/Nunito/static/Nunito-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Nunito";
-  src: url("/assets/fonts/Nunito/static/Nunito-SemiBold.ttf") format("truetype");
+  src: url("./../fonts/Nunito/static/Nunito-SemiBold.ttf") format("truetype");
   font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Nunito";
-  src: url("/assets/fonts/Nunito/static/Nunito-SemiBoldItalic.ttf")
+  src: url("./../fonts/Nunito/static/Nunito-SemiBoldItalic.ttf")
     format("truetype");
   font-weight: 600;
   font-style: italic;
@@ -155,14 +155,14 @@
 
 @font-face {
   font-family: "Nunito";
-  src: url("/assets/fonts/Nunito/static/Nunito-Black.ttf") format("truetype");
+  src: url("./../fonts/Nunito/static/Nunito-Black.ttf") format("truetype");
   font-weight: 900;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Nunito";
-  src: url("/assets/fonts/Nunito/static/Nunito-BlackItalic.ttf")
+  src: url("./../fonts/Nunito/static/Nunito-BlackItalic.ttf")
     format("truetype");
   font-weight: 900;
   font-style: italic;
@@ -170,14 +170,14 @@
 
 @font-face {
   font-family: "Nunito";
-  src: url("/assets/fonts/Nunito/static/Nunito-Bold.ttf") format("truetype");
+  src: url("./../fonts/Nunito/static/Nunito-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Nunito";
-  src: url("/assets/fonts/Nunito/static/Nunito-BoldItalic.ttf")
+  src: url("./../fonts/Nunito/static/Nunito-BoldItalic.ttf")
     format("truetype");
   font-weight: bold;
   font-style: italic;
@@ -185,7 +185,7 @@
 
 @font-face {
   font-family: "Nunito";
-  src: url("/assets/fonts/Nunito/static/Nunito-ExtraBold.ttf")
+  src: url("./../fonts/Nunito/static/Nunito-ExtraBold.ttf")
     format("truetype");
   font-weight: 800;
   font-style: normal;
@@ -193,7 +193,7 @@
 
 @font-face {
   font-family: "Nunito";
-  src: url("/assets/fonts/Nunito/static/Nunito-ExtraBoldItalic.ttf")
+  src: url("./../fonts/Nunito/static/Nunito-ExtraBoldItalic.ttf")
     format("truetype");
   font-weight: 800;
   font-style: italic;
@@ -201,7 +201,7 @@
 
 @font-face {
   font-family: "Nunito";
-  src: url("/assets/fonts/Nunito/static/Nunito-ExtraLight.ttf")
+  src: url("./../fonts/Nunito/static/Nunito-ExtraLight.ttf")
     format("truetype");
   font-weight: 200;
   font-style: normal;
@@ -210,7 +210,7 @@
 /* Pacifico Font */
 @font-face {
   font-family: "Pacifico";
-  src: url("/assets/fonts/Pacifico/Pacifico-Regular.ttf") format("truetype");
+  src: url("./../fonts/Pacifico/Pacifico-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
