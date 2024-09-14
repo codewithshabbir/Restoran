@@ -704,7 +704,7 @@ header.scrolled {
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   .shopping-cart {
     width: 100%;
     height: 92vh;
